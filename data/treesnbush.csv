@@ -1,0 +1,19 @@
+Ingredients,Type,Plantprice
+Apple,FALSE,160
+Raspberry,TRUE,220
+Cherry,FALSE,410
+Blackberry,TRUE,530
+Cacao,FALSE,550
+Coffee bean,TRUE,375
+Olive,FALSE,620
+Lemon,FALSE,670
+Orange,FALSE,720
+Peach,FALSE,750
+Banana,FALSE,800
+Plum,FALSE,600
+Mango,FALSE,770
+Coconut,FALSE,810
+Guava,FALSE,860
+Pomegranate,FALSE,910
+Honey,TRUE,120
+Peanuts,TRUE,1200

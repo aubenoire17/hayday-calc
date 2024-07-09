@@ -1,0 +1,855 @@
+Product,Ingredient,Price,Quantity
+Bread,Wheat,3,3
+Chicken feed,Wheat,3,2
+Chicken feed,Corn,7,1
+Cow feed,Soybean,10,2
+Cow feed,Corn,7,1
+Cream,Milk,32,1
+Corn bread,Corn,7,2
+Corn bread,Egg,18,2
+Brown sugar,Sugarcane,14,1
+Popcorn,Corn,7,2
+Butter,Milk,32,2
+Pancake,Egg,18,3
+Pancake,Brown sugar,32,1
+Pig feed,Carrot,7,2
+Pig feed,Soybean,10,1
+Cookie,Wheat,3,2
+Cookie,Egg,18,2
+Cookie,Brown sugar,32,1
+Bacon and eggs,Egg,18,4
+Bacon and eggs,Bacon,50,2
+Cheese,Milk,32,3
+White sugar,Sugarcane,14,2
+Carrot pie,Carrot,7,3
+Carrot pie,Wheat,3,2
+Carrot pie,Egg,18,1
+Pumpkin pie,Pumpkin,32,3
+Pumpkin pie,Wheat,3,2
+Pumpkin pie,Egg,18,1
+Sheep feed,Wheat,3,3
+Sheep feed,Soybean,10,1
+Buttered popcorn,Corn,7,2
+Buttered popcorn,Butter,82,1
+Sweater,Wool,54,2
+Bacon pie,Wheat,3,2
+Bacon pie,Bacon,50,3
+Bacon pie,Egg,18,1
+Syrup,Sugarcane,14,4
+Cotton fabric,Cotton,28,3
+Hamburger,Bread,21,2
+Hamburger,Bacon,50,2
+Raspberry muffin,Wheat,3,2
+Raspberry muffin,Egg,18,1
+Raspberry muffin,Raspberry,46,2
+Blue woolly hat,Wool,54,1
+Blue woolly hat,Indigo,25,1
+Cotton shirt,Cotton fabric,108,2
+Blue sweater,Wool,54,2
+Blue sweater,Indigo,25,2
+Carrot cake,Carrot,7,2
+Carrot cake,Butter,82,1
+Carrot cake,Brown sugar,32,1
+Wooly chaps,Cotton fabric,108,1
+Wooly chaps,Wool,54,3
+Cream cake,Wheat,3,5
+Cream cake,Cream,50,1
+Cream cake,White sugar,50,1
+Red berry cake,Raspberry,46,1
+Red berry cake,Cherry,68,2
+Red berry cake,Milk,32,1
+Red berry cake,Egg,18,1
+Cheesecake,Cheese,122,1
+Cheesecake,Cookie,104,1
+Silver bar,Silver ore,18,3
+Chili popcorn,Corn,7,2
+Chili popcorn,Chili Pepper,36,2
+Gold bar,Gold ore,21,3
+Platinum bar,Platinum ore,32,3
+Violet dress,Cotton fabric,108,2
+Violet dress,Raspberry,46,1
+Violet dress,Indigo,25,1
+Blackberry muffin,Wheat,3,1
+Blackberry muffin,Egg,18,2
+Blackberry muffin,Blackberry,82,2
+Carrot juice,Carrot,7,3
+Fish burger,Fish fillet,54,2
+Fish burger,Chili Pepper,36,1
+Fish burger,Bread,21,2
+Apple pie,Apple,39,3
+Apple pie,Wheat,3,2
+Apple pie,Egg,18,1
+Apple pie,Syrup,90,1
+Fish pie,Fish fillet,54,3
+Fish pie,Wheat,3,2
+Fish pie,Egg,18,1
+Apple juice,Apple,39,2
+Vanilla ice cream,Milk,32,1
+Vanilla ice cream,Cream,50,1
+Vanilla ice cream,White sugar,50,1
+Roasted tomatoes,Tomato,43,2
+Cherry juice,Cherry,68,2
+Tomato juice,Tomato,43,3
+Berry juice,Blackberry,82,1
+Berry juice,Raspberry,46,1
+Goat feed,Wheat,3,1
+Goat feed,Corn,7,1
+Goat feed,Carrot,7,2
+Goat cheese,Goat milk,64,2
+Pizza,Wheat,3,2
+Pizza,Tomato,43,1
+Pizza,Cheese,122,1
+Refined coal,Coal,10,3
+Cherry popsicle,Syrup,90,1
+Cherry popsicle,Cherry Juice,216,1
+Feta pie,Goat Cheese,162,1
+Feta pie,Wheat,3,2
+Feta pie,Egg,18,1
+Iron bar,Iron Ore,14,3
+Strawberry ice cream,Cream,50,1
+Strawberry ice cream,White sugar,50,1
+Strawberry ice cream,Strawberry,50,3
+Strawberry ice cream,Milk,32,1
+Wheat Bundle,Wheat,3,75
+Strawberry cake,Wheat,3,3
+Strawberry cake,Strawberry,50,2
+Strawberry cake,Cream,50,1
+Strawberry cake,White sugar,50,1
+Baked potato,Potato,36,2
+Baked potato,Chili Pepper,36,1
+Baked potato,Cream,50,1
+Baked potato,Cheese,122,1
+Apple jam,Apple,39,3
+Chocolate cake,Cacao,86,2
+Chocolate cake,Brown sugar,32,1
+Chocolate cake,Butter,82,1
+Casserole,Potato,36,2
+Casserole,Bacon,50,2
+Casserole,Egg,18,2
+Casserole,Cheese,122,1
+Raspberry jam,Raspberry,46,3
+Spicy pizza,Wheat,3,2
+Spicy pizza,Tomato,43,1
+Spicy pizza,Cheese,122,1
+Spicy pizza,Chili Pepper,36,1
+Blackberry jam,Blackberry,82,3
+Potato feta cake,Potato,36,1
+Potato feta cake,Egg,18,4
+Potato feta cake,Goat Cheese,162,1
+Cherry jam,Cherry,68,3
+Bracelet,Iron Bar,129,2
+Bracelet,Gold Bar,180,1
+Potato bread,Potato,36,2
+Potato bread,White sugar,50,1
+Potato bread,Egg,18,3
+Potato bread,Butter,82,1
+Shepherds pie,Potato,36,2
+Shepherds pie,Bacon,50,2
+Shepherds pie,Carrot,7,2
+Shepherds pie,Pumpkin,32,2
+Chocolate ice cream,Cream,50,1
+Chocolate ice cream,White sugar,50,1
+Chocolate ice cream,Cacao,86,2
+Chocolate ice cream,Milk,32,1
+Necklace,Iron Bar,129,2
+Necklace,Gold Bar,180,1
+Necklace,Platinum Bar,205,1
+Honey,Honeycomb,68,2
+Honey popcorn,Corn,7,2
+Honey popcorn,Honey,154,2
+Diamond ring,Gold Bar,180,2
+Diamond ring,Platinum Bar,205,2
+Fish and chips,Fish fillet,54,2
+Fish and chips,Potato,36,3
+Iron bracelet,Iron Bar,129,1
+Iron bracelet,Coal,10,2
+Iron bracelet,Iron bar,129,2
+Espresso,Coffee bean,64,3
+Espresso,White sugar,50,1
+Honey apple cake,Wheat,3,2
+Honey apple cake,Egg,18,2
+Honey apple cake,Apple,39,2
+Honey apple cake,Honey,154,2
+Caff� latte,Coffee bean,64,2
+Caff� latte,White sugar,50,1
+Caff� latte,Milk,32,1
+Chocolate popcorn,Corn,7,2
+Chocolate popcorn,Cacao,86,2
+Frutti di mare pizza,Wheat,3,2
+Frutti di mare pizza,Fish fillet,54,1
+Frutti di mare pizza,Lobster tail,201,1
+Frutti di mare pizza,Cheese,122,1
+Caff� mocha,Coffee bean,64,1
+Caff� mocha,Cream,50,1
+Caff� mocha,Cacao,86,2
+Raspberry mocha,Coffee bean,64,1
+Raspberry mocha,Cream,50,1
+Raspberry mocha,Cacao,86,1
+Raspberry mocha,Raspberry,46,1
+Lobster soup,Lobster tail,201,2
+Lobster soup,Tomato,43,1
+Lobster soup,Chili Pepper,36,2
+Lobster soup,Cream,50,1
+Hot chocolate,Cacao,86,2
+Hot chocolate,Cream,50,1
+Hot chocolate,Milk,32,1
+Hot chocolate,White sugar,50,1
+Tomato soup,Tomato,43,2
+Tomato soup,Tomato juice,162,1
+Tomato soup,Chili Pepper,36,1
+Tomato soup,Goat Cheese,162,1
+Red scarf,Wool,54,2
+Red scarf,Strawberry,50,2
+Lobster skewer,Lobster tail,201,1
+Lobster skewer,Chili Pepper,36,1
+Lobster skewer,Honey,154,1
+Beeswax,Honeycomb,68,3
+Strawberry candle,Beeswax,234,1
+Strawberry candle,Strawberry,50,2
+Pumpkin soup,Pumpkin,32,3
+Pumpkin soup,Butter,82,1
+Pumpkin soup,Honey,154,1
+Pumpkin soup,Carrot,7,2
+Rustic bouquet,Wheat,3,5
+Rustic bouquet,Indigo,25,3
+Rustic bouquet,Cotton,28,3
+Strawberry jam,Strawberry,50,3
+Sesame Ice Cream,Cream,50,1
+Sesame Ice Cream,Sesame,18,3
+Sesame Ice Cream,Brown sugar,32,1
+Caramel apple,Syrup,90,2
+Caramel apple,Apple,39,1
+Pillow,Cotton fabric,108,2
+Pillow,Duck feather,140,3
+Toffee,Butter,82,1
+Toffee,Wheat,3,1
+Toffee,White sugar,50,1
+Raspberry candle,Beeswax,234,1
+Raspberry candle,Raspberry,46,2
+Pineapple juice,Pineapple,14,3
+Fish soup,Potato,36,3
+Fish soup,Fish fillet,54,2
+Fish soup,Milk,32,1
+Fish soup,Carrot,7,1
+Soy sauce,Soybean,10,9
+Soy sauce,Wheat,3,1
+Chocolate,Cacao,86,3
+Chocolate,Cream,50,1
+Chocolate,White sugar,50,1
+Fancy cake,Cream Cake,219,1
+Fancy cake,Lily,21,3
+Fancy cake,Raspberry,46,3
+Fancy cake,Gold ore,21,1
+Sushi roll,Fish fillet,54,1
+Sushi roll,Rice,18,15
+Sushi roll,Soy sauce,154,1
+Lollipop,Syrup,90,1
+Lollipop,Cherry,68,1
+Lollipop,Strawberry,50,2
+Feta salad,Lettuce,32,3
+Feta salad,Roasted tomatoes,118,1
+Feta salad,Goat Cheese,162,2
+Feta salad,Olive,82,2
+Lobster sushi,Lobster tail,201,1
+Lobster sushi,Rice,18,15
+Lobster sushi,Soy sauce,154,1
+Blanket,Cotton fabric,108,3
+Blanket,Pumpkin,32,1
+Blanket,Duck feather,140,5
+Jelly beans,Blackberry jam,388,1
+Jelly beans,Raspberry jam,252,1
+Jelly beans,White sugar,50,1
+Olive oil,Olive,82,3
+Garlic bread,Bread,21,2
+Garlic bread,Butter,82,1
+Garlic bread,Garlic,14,4
+Veggie bagel,Bread,21,2
+Veggie bagel,Tomato,43,2
+Veggie bagel,Lettuce,32,3
+Veggie bagel,Olive oil,277,1
+BLT salad,Lettuce,32,3
+BLT salad,Roasted tomatoes,118,1
+BLT salad,Bacon,50,2
+BLT salad,Mayonnaise,367,1
+Mayonnaise,Egg,18,4
+Mayonnaise,Olive oil,277,1
+Caramel latte,Coffee bean,64,2
+Caramel latte,Toffee,176,1
+Caramel latte,Milk,32,1
+Egg sushi,Brown sugar,32,1
+Egg sushi,Egg,18,4
+Egg sushi,Rice,18,15
+Egg sushi,Soy sauce,154,1
+Honey peanuts,Honey,154,1
+Honey peanuts,Peanuts,234,1
+Seafood salad,Lettuce,32,3
+Seafood salad,Fish fillet,54,1
+Seafood salad,Lobster tail,201,1
+Seafood salad,Mayonnaise,367,1
+Berry smoothie,Raspberry,46,3
+Berry smoothie,Strawberry,50,3
+Berry smoothie,Blackberry,82,3
+Snack mix,Corn,7,2
+Snack mix,Soybean,10,1
+Snack mix,Peanuts,234,1
+Bacon toast,Bacon,50,2
+Bacon toast,Bread,21,2
+Bacon toast,Lettuce,32,3
+Bacon toast,Mayonnaise,367,1
+Bright bouquet,Sunflower,21,5
+Bright bouquet,Indigo,25,3
+Bright bouquet,Cotton,28,1
+Bright bouquet,Iron Ore,14,5
+Pineapple cake,Pineapple,14,3
+Pineapple cake,Egg,18,2
+Pineapple cake,Cherry,68,2
+Pineapple cake,Wheat,3,4
+Chocolate pie,Wheat,3,3
+Chocolate pie,Cacao,86,2
+Chocolate pie,Egg,18,1
+Chocolate pie,Peanuts,234,1
+Cabbage soup,Cabbage,18,3
+Cabbage soup,Bacon,50,2
+Cabbage soup,Potato,36,2
+Cabbage soup,Carrot,7,2
+Lemon curd,Lemon,93,2
+Lemon curd,Butter,82,1
+Lemon curd,Egg,18,2
+Lemon curd,White sugar,50,1
+Egg sandwich,Bread,21,2
+Egg sandwich,Egg,18,2
+Egg sandwich,Lettuce,32,3
+Egg sandwich,Mayonnaise,367,1
+Green smoothie,Lettuce,32,5
+Green smoothie,Lemon,93,1
+Green smoothie,Apple,39,1
+Olive dip,Olive,82,3
+Olive dip,Bread,21,2
+Olive dip,Fish fillet,54,1
+Olive dip,Lemon,93,1
+Fresh pasta,Egg,18,1
+Fresh pasta,Wheat,3,2
+Pasta salad,Fresh pasta,43,4
+Pasta salad,Lemon,93,2
+Pasta salad,Olive oil,277,1
+Pasta salad,Tomato,43,2
+Lemon pie,Lemon curd,378,1
+Lemon pie,Wheat,3,2
+Lemon pie,Egg,18,1
+Grilled onion,Butter,82,1
+Grilled onion,Onion,39,2
+Lemon cake,Lemon curd,378,2
+Lemon cake,Egg,18,2
+Lemon cake,Cream,50,1
+Lemon cake,Wheat,3,3
+Peanut Butter Milkshake,Peanuts,234,1
+Peanut Butter Milkshake,Milk,32,1
+Peanut Butter Milkshake,Cream,50,1
+Peanut Butter Milkshake,Cacao,86,3
+Tomato sauce,Brown sugar,32,1
+Tomato sauce,Lemon,93,1
+Tomato sauce,Tomato,43,2
+Honey toast,Bread,21,1
+Honey toast,Egg,18,1
+Honey toast,Milk,32,1
+Honey toast,Honey,154,1
+Fried rice,Rice,18,5
+Fried rice,Egg,18,5
+Yogurt smoothie,Cream,50,1
+Yogurt smoothie,Raspberry,46,2
+Yogurt smoothie,Cherry,68,1
+Yogurt smoothie,White sugar,50,1
+Cloche hat,Strawberry,50,2
+Cloche hat,Wool,54,6
+Cucumber smoothie,Cucumber,14,3
+Cucumber smoothie,Honey,154,1
+Cucumber smoothie,Pineapple,14,3
+Orange juice,Orange,97,2
+Flower shawl,Wool,54,2
+Flower shawl,Sunflower,21,3
+Flower shawl,Blackberry,82,1
+Peanut Butter and Jelly Sandwich,Bread,21,2
+Peanut Butter and Jelly Sandwich,Raspberry jam,252,1
+Peanut Butter and Jelly Sandwich,Peanuts,234,1
+Onion soup,Bread,21,2
+Onion soup,Cheese,122,1
+Onion soup,Onion,39,3
+Lemon candle,Beeswax,234,1
+Lemon candle,Lemon,93,2
+Top hat,Cotton fabric,108,3
+Top hat,Coal,10,1
+Top hat,Duck feather,140,1
+Gnocchi,Potato,36,4
+Gnocchi,Tomato,43,3
+Gnocchi,Wheat,3,2
+Gnocchi,Butter,82,2
+Winter veggies,Beetroot,14,2
+Winter veggies,Carrot,7,2
+Winter veggies,Potato,36,2
+Winter veggies,Pumpkin,32,2
+Noodle soup,Carrot,7,2
+Noodle soup,Chili Pepper,36,1
+Noodle soup,Egg,18,2
+Noodle soup,Rice noodles,100,3
+Rice noodles,Rice,18,5
+Gracious bouquet,Cotton fabric,108,1
+Gracious bouquet,Lily,21,5
+Gracious bouquet,Gold ore,21,1
+Marmalade,Orange,97,3
+Sun hat,Wool,54,3
+Sun hat,Indigo,25,1
+Sun hat,Duck feather,140,2
+Sun hat,Raspberry,46,1
+Veggie lasagna,Carrot,7,1
+Veggie lasagna,Cheese,122,1
+Veggie lasagna,Tomato sauce,230,1
+Veggie lasagna,Fresh pasta,43,3
+Veggie Platter,Bell pepper,36,2
+Veggie Platter,Carrot,7,2
+Veggie Platter,Tomato,43,2
+Veggie Platter,Cream,50,1
+Hot dog,Bacon,50,2
+Hot dog,Bread,21,1
+Hot dog,Tomato sauce,230,1
+Coleslaw,Cabbage,18,3
+Coleslaw,Carrot,7,2
+Coleslaw,Mayonnaise,367,1
+Cotton candy,White sugar,50,3
+Cotton candy,Strawberry,50,1
+Peach tart,Cream,50,1
+Peach tart,Egg,18,2
+Peach tart,Peach,100,3
+Peach tart,Wheat,3,2
+Big sushi roll,Fish fillet,54,1
+Big sushi roll,Rice,18,20
+Big sushi roll,Egg,18,3
+Big sushi roll,Lettuce,32,5
+Tofu Dog,Lettuce,32,3
+Tofu Dog,Soybean,10,6
+Tofu Dog,Tomato,43,4
+Beetroot Salad,Beetroot,14,3
+Beetroot Salad,Goat Cheese,162,1
+Plain Donut,Milk,32,1
+Plain Donut,White sugar,50,1
+Plain Donut,Egg,18,1
+Plain Donut,Wheat,3,3
+Salsa,Chili Pepper,36,2
+Salsa,Onion,39,2
+Salsa,Tomato,43,2
+Taco,Corn bread,72,1
+Taco,Bacon,50,1
+Taco,Salsa,252,1
+Orange sorbet,Honey,154,1
+Orange sorbet,Orange,97,2
+Corn dog,Bacon,50,4
+Corn dog,Corn,7,4
+Corn dog,Olive oil,277,1
+Potato soup,Potato,36,3
+Potato soup,Onion,39,2
+Potato soup,Milk,32,1
+Summer Rolls,Rice noodles,100,2
+Summer Rolls,Carrot,7,2
+Summer Rolls,Lettuce,32,1
+Summer Rolls,Chili Pepper,36,1
+Sesame Brittle,Sesame,18,3
+Sesame Brittle,Ginger,28,1
+Sesame Brittle,Honey,154,1
+Affogato,Vanilla ice cream,172,1
+Affogato,Espresso,248,1
+Fish Taco,Chili Pepper,36,2
+Fish Taco,Corn bread,72,2
+Fish Taco,Fish fillet,54,1
+Fish Taco,Lemon,93,1
+Peach jam,Peach,100,3
+Lobster pasta,Lobster tail,201,1
+Lobster pasta,Cream,50,2
+Lobster pasta,Fresh pasta,43,3
+Lobster pasta,Tomato,43,4
+Cucumber sandwich,Cucumber,14,2
+Cucumber sandwich,Mayonnaise,367,1
+Cucumber sandwich,Bread,21,2
+Spicy fish,Fish fillet,54,1
+Spicy fish,Chili Pepper,36,3
+Spicy fish,Garlic,14,5
+Spicy fish,Olive oil,277,1
+Sprinkled donut,Plain Donut,129,1
+Sprinkled donut,Cacao,86,2
+Green tea,Tea leaf,43,5
+Onion dog,Bacon,50,2
+Onion dog,Bread,21,1
+Onion dog,Chili Pepper,36,1
+Onion dog,Onion,39,3
+Stuffed peppers,Bacon,50,3
+Stuffed peppers,Bread,21,1
+Stuffed peppers,Chili Pepper,36,1
+Stuffed peppers,Onion,39,3
+Milk tea,Milk,32,1
+Milk tea,Tea leaf,43,3
+Bell Pepper Soup,Bread,21,1
+Bell Pepper Soup,Olive oil,277,1
+Bell Pepper Soup,Chili Pepper,36,1
+Bell Pepper Soup,Bell pepper,36,2
+Chocolate fondue,Chocolate,460,1
+Chocolate fondue,Strawberry,50,3
+Quesadilla,Cheese,122,1
+Quesadilla,Chili Pepper,36,2
+Quesadilla,Wheat,3,4
+Fruit Salad,Blackberry,82,2
+Fruit Salad,Honey,154,1
+Fruit Salad,Orange,97,1
+Fruit Salad,Strawberry,50,3
+Crunchy Donut,Plain Donut,129,1
+Crunchy Donut,Cacao,86,1
+Crunchy Donut,Peanuts,234,1
+Peach Ice Cream,Cream,50,1
+Peach Ice Cream,Honey,154,1
+Peach Ice Cream,Peach,100,2
+Honey Tea,Honey,154,1
+Honey Tea,Tea leaf,43,3
+Pasta carbonara,Fresh pasta,43,3
+Pasta carbonara,Bacon,50,2
+Pasta carbonara,Egg,18,1
+Pasta carbonara,Cheese,122,1
+Broccoli pasta,Broccoli,21,3
+Broccoli pasta,Cheese,122,1
+Broccoli pasta,Fresh pasta,43,3
+Summer salad,Goat Cheese,162,1
+Summer salad,Onion,39,3
+Summer salad,Peach,100,1
+Summer salad,Tomato,43,3
+Grape juice,Grapes,32,2
+Onion melt,Corn bread,72,2
+Onion melt,Onion,39,3
+Onion melt,Cheese,122,1
+Honey soap,Goat milk,64,1
+Honey soap,Cacao,86,2
+Honey soap,Honeycomb,68,1
+Lemon lotion,Olive oil,277,1
+Lemon lotion,Lemon,93,1
+Colorful candles,Beeswax,234,1
+Colorful candles,Raspberry,46,1
+Colorful candles,Carrot,7,1
+Grape jam,Grapes,32,3
+Mint ice cream,Cream,50,1
+Mint ice cream,White sugar,50,1
+Mint ice cream,Mint,32,2
+Mint ice cream,Cacao,86,1
+Lemon tea,Lemon,93,1
+Lemon tea,Tea leaf,43,3
+Flower crown,Peony,36,5
+Flower crown,Cotton,28,4
+Bacon fondue,Bacon,50,3
+Bacon fondue,Broccoli,21,1
+Bacon fondue,Bell pepper,36,1
+Bacon fondue,Olive oil,277,1
+Peanut Noodles,Ginger,28,1
+Peanut Noodles,Rice noodles,100,1
+Peanut Noodles,Soy sauce,154,1
+Peanut Noodles,Peanuts,234,1
+Gingerbread cookie,Wheat,3,5
+Gingerbread cookie,Butter,82,1
+Gingerbread cookie,Syrup,90,1
+Gingerbread cookie,Ginger,28,2
+Cream donut,Plain Donut,129,1
+Cream donut,Cream,50,1
+Cream donut,Brown sugar,32,1
+Nachos,Cheese,122,1
+Nachos,Corn,7,4
+Nachos,Salsa,252,1
+Spicy Pasta,Fresh pasta,43,3
+Spicy Pasta,Tomato sauce,230,1
+Spicy Pasta,Chili Pepper,36,3
+Spicy Pasta,Onion,39,2
+Broccoli Soup,Broccoli,21,3
+Broccoli Soup,Onion,39,1
+Broccoli Soup,Potato,36,3
+Bacon Fries,Chili Pepper,36,1
+Bacon Fries,Bacon,50,2
+Bacon Fries,Potato,36,4
+Bacon Fries,Garlic,14,1
+Mixed smoothie,Lemon,93,1
+Mixed smoothie,Orange,97,2
+Mixed smoothie,Peach,100,2
+Iced banana latte,Banana,104,1
+Iced banana latte,Coffee bean,64,2
+Iced banana latte,Milk,32,1
+Apple Ginger Tea,Ginger,28,1
+Apple Ginger Tea,Apple,39,2
+Apple Ginger Tea,Tea leaf,43,1
+Bacon donut,Plain Donut,129,1
+Bacon donut,Bacon,50,3
+Bacon donut,Syrup,90,1
+Passion Fruit Juice,Passion fruit,18,2
+Orange Tea,Orange,97,1
+Orange Tea,Tea leaf,43,3
+Fruit Cake,Grapes,32,2
+Fruit Cake,Orange,97,2
+Fruit Cake,Cherry,68,2
+Fruit Cake,Wheat,3,3
+Mushroom Salad,Mushroom,10,3
+Mushroom Salad,Lettuce,32,1
+Mushroom Salad,Potato,36,2
+Mushroom Salad,Bacon,50,1
+Tofu stir fry,Soybean,10,3
+Tofu stir fry,Onion,39,3
+Tofu stir fry,Broccoli,21,3
+Tofu stir fry,Sesame,18,3
+Candy bouquet,Peony,36,3
+Candy bouquet,Caramel apple,255,1
+Candy bouquet,Toffee,176,1
+Grilled eggplant,Eggplant,14,3
+Grilled eggplant,Salsa,252,1
+Banana bread,Banana,104,3
+Banana bread,Grapes,32,2
+Banana bread,Wheat,3,3
+Banana bread,Egg,18,1
+Cheese fondue,Potato bread,284,1
+Cheese fondue,Cheese,122,1
+Cheese fondue,Mushroom,10,2
+Cheese fondue,Tomato,43,1
+Hand pies,Apple jam,219,1
+Hand pies,Egg,18,2
+Hand pies,Wheat,3,5
+Pickles,Cucumber,14,3
+Pickles,Onion,39,2
+Pickles,Lemon,93,1
+Iced tea,Peach,100,1
+Iced tea,Tea leaf,43,3
+Goat cheese toast,Grapes,32,3
+Goat cheese toast,Goat Cheese,162,1
+Goat cheese toast,Bread,21,1
+Watermelon Juice,Watermelon,39,2
+Birthday Bouquet,Cherry juice,216,1
+Birthday Bouquet,Peony,36,3
+Birthday Bouquet,Lily,21,1
+Birthday Bouquet,Indigo,25,1
+Passion fruit pie,Passion fruit,18,3
+Passion fruit pie,Wheat,3,2
+Passion fruit pie,Egg,18,1
+Soft bouquet,Peony,36,4
+Soft bouquet,Cotton,28,1
+Soft bouquet,Cotton fabric,108,1
+Black sesame smoothie,Sesame,18,3
+Black sesame smoothie,Banana,104,1
+Black sesame smoothie,Goat milk,64,2
+Exfoliating soap,Cacao,86,2
+Exfoliating soap,Coffee bean,64,2
+Exfoliating soap,Raspberry,46,1
+Filled donut,Plain Donut,129,1
+Filled donut,Raspberry jam,252,1
+Banana pancakes,Banana,104,1
+Banana pancakes,Blackberry,82,2
+Banana pancakes,Wheat,3,3
+Banana pancakes,Cream,50,1
+Plum jam,Plum,82,3
+Tea pot,Clay,18,3
+Tea pot,Coffee bean,64,1
+Tea pot,Gold ore,21,1
+Floral candle,Beeswax,234,1
+Floral candle,Peony,36,2
+Floral candle,Sunflower,21,2
+Floral candle,Indigo,25,2
+Chocolate roll,Cacao,86,5
+Chocolate roll,Cream,50,1
+Chocolate roll,Wheat,3,3
+Chocolate roll,Mint,32,3
+Canned fish,Fish fillet,54,2
+Canned fish,Chili Pepper,36,1
+Canned fish,Olive oil,277,1
+Hummus,Chickpea,18,3
+Hummus,Lemon,93,2
+Hummus,Garlic,14,1
+Banana split,Banana,104,1
+Banana split,Cream,50,1
+Banana split,Cherry,68,3
+Fish skewer,Fish fillet,54,1
+Fish skewer,Mushroom,10,3
+Fish skewer,Ginger,28,1
+Fish skewer,Sesame,18,2
+Passion fruit jam,Passion fruit,18,3
+Potted plant,Clay,18,3
+Potted plant,Sunflower,21,1
+Mint tea,Tea leaf,43,3
+Mint tea,Watermelon,39,1
+Mint tea,Mint,32,1
+Mushroom pot pie,Mushroom,10,3
+Mushroom pot pie,Cabbage,18,3
+Mushroom pot pie,Wheat,3,3
+Mushroom pot pie,Egg,18,2
+Mango juice,Mango,100,2
+Flower pendant,Peony,36,3
+Flower pendant,Platinum bar,205,1
+Flower pendant,Gold bar,180,2
+Chili poppers,Chili Pepper,36,3
+Chili poppers,Wheat,3,1
+Chili poppers,Bacon,50,3
+Chili poppers,Cheese,122,1
+Kimchi,Cabbage,18,5
+Kimchi,Ginger,28,1
+Kimchi,Chili Pepper,36,1
+Kimchi,Garlic,14,1
+Falafel,Chickpea,18,3
+Falafel,Onion,39,2
+Falafel,Garlic,14,2
+Falafel,Chili Pepper,36,1
+Eggplant parmesan,Eggplant,14,4
+Eggplant parmesan,Cheese,122,1
+Eggplant parmesan,Tomato sauce,230,1
+Honey face mask,Egg,18,2
+Honey face mask,Honey,154,1
+Honey face mask,Lemon,93,1
+Clay mug,Clay,18,3
+Clay mug,Indigo,25,2
+Clay mug,Peony,36,1
+Rich fudge,Butter,82,3
+Rich fudge,Cacao,86,3
+Rich fudge,White sugar,50,2
+Cocoa smoothie,Banana,104,2
+Cocoa smoothie,Cacao,86,3
+Cocoa smoothie,Milk,32,1
+Fried Candy Bar,Cacao,86,3
+Fried Candy Bar,Cookie,104,1
+Fried Candy Bar,Peanuts,234,1
+Tart dressing,Passion fruit,18,2
+Tart dressing,Chili Pepper,36,2
+Tart dressing,Honey,154,1
+Tropical fondue,White sugar,50,1
+Tropical fondue,Cream,50,2
+Tropical fondue,Pineapple,14,3
+Tropical fondue,Mango,100,2
+Mushroom pasta,Mushroom,10,5
+Mushroom pasta,Fresh pasta,43,3
+Mushroom pasta,Goat milk,64,1
+Macaroon,Cacao,86,1
+Macaroon,Coconut,108,2
+Macaroon,White sugar,50,2
+Plum smoothie,Plum,82,3
+Plum smoothie,Grapes,32,2
+Plum smoothie,Mint,32,1
+Plum smoothie,Honey,154,1
+Dried fruit,Grapes,32,1
+Dried fruit,Raspberry,46,1
+Dried fruit,Strawberry,50,1
+Dried fruit,Orange,97,1
+Mint fudge,Butter,82,2
+Mint fudge,Cacao,86,2
+Mint fudge,White sugar,50,1
+Mint fudge,Mint,32,3
+Coconut ice cream,Coconut,108,2
+Coconut ice cream,Syrup,90,1
+Samosa,Chickpea,18,2
+Samosa,Wheat,3,4
+Samosa,Potato,36,3
+Samosa,Chili Pepper,36,1
+Plain yogurt,Milk,32,2
+Plain yogurt,Cream,50,3
+Mushroom soup,Mushroom,10,3
+Mushroom soup,Milk,32,1
+Mushroom soup,Onion,39,2
+Chili fudge,Butter,82,2
+Chili fudge,Cacao,86,2
+Chili fudge,White sugar,50,1
+Chili fudge,Chili Pepper,36,3
+Tropical smoothie,Coconut,108,1
+Tropical smoothie,Banana,104,1
+Tropical smoothie,Passion fruit,18,2
+Tropical smoothie,Mango,100,2
+Guava juice,Guava,111,2
+Guava compote,Guava,111,2
+Guava compote,Lemon,93,1
+Guava compote,White sugar,50,1
+Strawberry yogurt,Plain yogurt,234,1
+Strawberry yogurt,Strawberry jam,270,1
+Veggie Bouquet,Broccoli,21,3
+Veggie Bouquet,Tomato,43,3
+Veggie Bouquet,Mushroom,10,3
+Veggie Bouquet,Cotton fabric,108,1
+Chickpea Stew,Coconut,108,1
+Chickpea Stew,Tomato,43,2
+Chickpea Stew,Chickpea,18,3
+Fruit Sorbet,Guava,111,1
+Fruit Sorbet,Passion fruit,18,1
+Fruit Sorbet,Mango,100,2
+Fruit Sorbet,White sugar,50,3
+Lemon Fudge,Butter,82,2
+Lemon Fudge,White sugar,50,2
+Lemon Fudge,Milk,32,3
+Lemon Fudge,Lemon,93,2
+Hummus wrap,Hummus,277,1
+Hummus wrap,Bread,21,1
+Hummus wrap,Lettuce,32,1
+Tropical yogurt,Plain yogurt,234,1
+Tropical yogurt,Raspberry,46,4
+Tropical yogurt,Passion fruit,18,1
+Tropical yogurt,Mango,100,2
+Chili stew,Chili Pepper,36,3
+Chili stew,Bacon,50,2
+Chili stew,Onion,39,2
+Chili stew,Cream,50,1
+Plain cupcake,Milk,32,2
+Plain cupcake,White sugar,50,3
+Plain cupcake,Egg,18,1
+Plain cupcake,Wheat,3,5
+Guava cupcake,Plain cupcake,280,1
+Guava cupcake,Guava,111,2
+Guava cupcake,Cream,50,1
+Rice ball,Rice,18,20
+Rice ball,Sesame,18,1
+Rice ball,Plum,82,1
+Peanut fudge,Butter,82,2
+Peanut fudge,Cacao,86,2
+Peanut fudge,White sugar,50,1
+Peanut fudge,Peanuts,234,2
+Winter stew,Bacon,50,1
+Winter stew,Potato,36,3
+Winter stew,Onion,39,2
+Winter stew,Mushroom,10,2
+Tropical cupcake,Plain cupcake,280,1
+Tropical cupcake,Pineapple,14,3
+Tropical cupcake,Coconut,108,2
+Cookie cupcake,Plain cupcake,280,1
+Cookie cupcake,Cream,50,2
+Cookie cupcake,Cookie,104,2
+Cookie cupcake,Cacao,86,1
+Pomegranate Tea,Tea leaf,43,4
+Pomegranate Tea,Pomegranate,111,1
+Breakfast Bowl,Plain yogurt,234,1
+Breakfast Bowl,Oats,7,4
+Breakfast Bowl,Honey,154,1
+Breakfast Bowl,Blackberry,82,2
+Apple Porridge,Apple,39,1
+Apple Porridge,Apple jam,219,2
+Apple Porridge,Oats,7,4
+Pineapple Coconut Bars,Coconut,108,1
+Pineapple Coconut Bars,White sugar,50,2
+Pineapple Coconut Bars,Oats,7,3
+Pineapple Coconut Bars,Pineapple,14,2
+Sweet Porridge,Peach,100,1
+Sweet Porridge,Honey,154,2
+Sweet Porridge,Oats,7,3
+Rich Soap,Oats,7,2
+Rich Soap,Coconut,108,1
+Rich Soap,Pomegranate,111,1
+Fresh Porridge,Pomegranate,111,1
+Fresh Porridge,Mint,32,2
+Fresh Porridge,Coconut,108,2
+Fresh Porridge,Oats,7,3
+Plain Waffles,White sugar,50,2
+Plain Waffles,Egg,18,3
+Plain Waffles,Wheat,3,5
+Berry Waffles,Plain Waffles,198,1
+Berry Waffles,Syrup,90,1
+Berry Waffles,Raspberry,46,3
+Berry Waffles,Blackberry,82,2
+Chocolate Waffles,Plain Waffles,198,1
+Chocolate Waffles,Cacao,86,2
+Chocolate Waffles,Strawberry,50,3
+Chocolate Waffles,Banana,104,1
+Breakfast Waffles,Plain Waffles,198,1
+Breakfast Waffles,Bacon,50,2
+Breakfast Waffles,Egg,18,1
+Breakfast Waffles,Asparagus,43,2
+Orange Salad,Cheese,122,1
+Orange Salad,Lettuce,32,3
+Orange Salad,Pomegranate,111,1
+Orange Salad,Orange,97,2
