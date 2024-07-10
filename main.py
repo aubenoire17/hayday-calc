@@ -2,7 +2,7 @@ import pandas as pd
 
 class Product:
     def __init__(self, name, price, time, xp, machine, ingredients=None):
-        self.name = name
+        self.name = name.capitalize()
         self.price = price
         self.time = self.time_convert(time)
         self.xp = xp
@@ -37,28 +37,26 @@ class Product:
             return 1
         else:
             return 'ERROR'
+        
 
     def calculate_production_cost(self):
         total_cost = 0
         for ingredient in self.ingredients:
-            ingredient_name = ingredient['name']
+            price = pd.to_numeric(ingredient['price'], errors='coerce')
             quantity = pd.to_numeric(ingredient['quantity'], errors='coerce')
-            # Fetch the price of the ingredient from corresponding Product instance
-            ingredient_price = None
-            for product in products:
-                if product.name == ingredient_name:
-                    ingredient_price = product.price
-                    break
-            if ingredient_price is None:
-                raise ValueError(f"No matching product found for ingredient: {ingredient_name}")
-            total_cost += ingredient_price * quantity
+            total_cost += price * quantity
         return total_cost
-    
+
+
 # Read the main CSV file
 products_df = pd.read_csv(r'C:\Users\yanso\VSCode proj\hayday\data\HDpriceandxp.csv')
 
 # Read the ingredients CSV file
-ingredients_df = pd.read_csv(r'C:\Users\yanso\VSCode proj\hayday\data\HDingredients.csv', header=None, names=['Product', 'Ingredient', 'Price', 'Quantity'])
+ingredients_df = pd.read_csv(r'C:\Users\yanso\VSCode proj\hayday\data\HDingredients.csv', header=None, names=['Product', 'Ingredient', 'Quantity'])
+
+# Capitalize Product and Ingredient columns
+ingredients_df['Product'] = ingredients_df['Product'].str.capitalize()
+ingredients_df['Ingredient'] = ingredients_df['Ingredient'].str.capitalize()
 
 # Create instances of the Product class
 products = []
@@ -76,18 +74,31 @@ for index, row in ingredients_df.iterrows():
     if product_name in product_dict:
         ingredient = {
             'name': row['Ingredient'],
-            'price': row['Price'],
+            'price': None,  # Initialize price
             'quantity': row['Quantity']
         }
+        # Find the product with matching name and update ingredient price
+        for product in products:
+            if product.name == ingredient['name']:
+                ingredient['price'] = product.price
+                break
+        
         product_dict[product_name].ingredients.append(ingredient)
 
-# Update the production cost for each product
-for product in products:
-    product.production_cost = product.calculate_production_cost()
+
+# Define machines to ignore for warning
+ignore_warning_machines = ['Field', 'Mine', 'Sheep', 'Cow' ,'Pig' , 'Chicken' , 'Pomegranate tree' , 'Net Maker', 'Cacao tree' , 'Lure Workbench',
+                           'Apple tree', 'Raspberry bush', 'Blackberry bush', 'Coconut tree', 'Mango tree', 'Banana tree', 'Guava Tree', 'Plum tree',
+                           'Orange tree', 'Peach tree', 'Lemon tree', 'Squirrel House', 'Duck Salon', 'Olive tree', 'Lobster Pool']
 
 # Update the production cost for each product
 for product in products:
     product.production_cost = product.calculate_production_cost()
-    if product.production_cost == 0 and product.machine != 'Field':
+    if product.production_cost == 0 and product.machine not in ignore_warning_machines:
         print(f"Warning: Product {product.name} has a production cost of 0.")
         print(f"All attributes: {product}")
+
+'''# Print the products to verify
+for product in products:
+    print(product)
+'''
