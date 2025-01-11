@@ -1,0 +1,57 @@
+files:
+  items_csv: "data/items.csv"
+  recipes_csv: "data/recipes.csv"
+  plants_csv: "data/treesnbush.csv"
+
+animal_feed:
+  "Chicken feed": "Egg"
+  "Cow feed": "Milk"
+  "Pig feed": "Bacon"
+  "Sheep feed": "Wool"
+  "Goat feed": "Goat milk"
+
+rare_ingredients:
+  fruits:
+    Apple: True
+    Raspberry: True
+    Cherry: True
+    Blackberry: True
+    Cacao: True
+    Coffee bean: True
+    Olive: True
+    Lemon: True
+    Orange: True
+    Peach: True
+    Banana: True
+    Plum: True
+    Mango: True
+    Coconut: True
+    Guava: True
+    Pomegranate: True
+    Honey: True
+    Peanuts: True
+    Honeycomb: True
+  fish:
+    Fish fillet: True
+    Lobster tail: True
+    Duck feather: True
+  diamond:
+    Diamond: True
+  sugar:
+    Brown sugar: True
+    White sugar: True
+    Syrup: True
+  diary:
+    Cream: True
+    Butter: True
+    Cheese: True
+    Goat cheese: True
+
+ignore_machines:
+  ['Field', 'Mine', 'Sheep', 'Cow' ,'Pig' , 'Chicken' , 'Goat' , 'Pomegranate tree' ,
+  'Net Maker', 'Cacao tree' , 'Lure Workbench', 'Apple tree', 'Raspberry bush',
+  'Blackberry bush', 'Coconut tree', 'Mango tree', 'Banana tree', 'Guava Tree',
+  'Plum tree', 'Orange tree', 'Peach tree', 'Lemon tree', 'Squirrel House',
+  'Duck Salon', 'Olive tree', 'Lobster Pool', 'Fish', 'Beehive tree', 'Cherry tree',
+  'Coffee bush']
+

@@ -1,104 +1,158 @@
+import math
 import pandas as pd
+import yaml
 
-class Product:
-    def __init__(self, name, price, time, xp, machine, ingredients=None):
-        self.name = name.capitalize()
-        self.price = price
-        self.time = self.time_convert(time)
-        self.xp = xp
-        self.machine = machine
-        self.ingredients = ingredients if ingredients is not None else []
-        self.production_cost = self.calculate_production_cost()
+from preprocessing import run_preprocessing
 
-    def __repr__(self):
-        return (f"Product(Name: {self.name}, Price: {self.price}, Time: {self.time}, "
-                f"XP: {self.xp}, Machine: {self.machine}, ProductionCost: {self.production_cost}, Ingredients: {self.ingredients})")
+def get_machine(available_machines, num_columns=3):
 
-    @staticmethod
-    def time_convert(value):
-        if 'd' in value and 'h' in value:
-            days = int(value[:value.find('d')].strip())
-            hours = int(value[value.find('d') + 1:value.find('h')].strip())
-            return (days * 24 + hours) * 60
-        elif 'h' in value and 'min' in value:
-            hours = int(value[:value.find('h')].strip())
-            minutes = int(value[value.find('h') + 1:value.find('min')].strip())
-            return hours * 60 + minutes
-        elif 'd' in value:
-            days = int(value[:value.find('d')].strip())
-            return days * 24 * 60
-        elif 'h' in value:
-            hours = int(value[:value.find('h')].strip())
-            return hours * 60
-        elif 'min' in value:
-            minutes = int(value[:value.find('min')].strip())
-            return minutes
-        elif 'Instant' in value:
-            return 1
-        else:
-            return 'ERROR'
+    num_rows = math.ceil(len(available_machines) / num_columns)
+    columns = [available_machines[i:i + num_rows] for i in range(0, len(available_machines), num_rows)]
+    
+    print("Available machines:")
+    
+    max_length = max(len(machine) for machine in available_machines)
+    
+    column_width = max_length + 2
+    number_width = len(str(len(available_machines))) + 2
+
+    for row in range(num_rows):
+        row_display = []
+        for col in range(num_columns):
+            if row < len(columns[col]):
+                machine_name = f"{columns[col][row]}"
+                index = f"{(col * num_rows) + row + 1}"
+                row_display.append(f"{index:<{number_width}} {machine_name:<{column_width}}")
+            else:
+                row_display.append(' ' * (number_width + column_width))
         
+        print("".join(row_display))
 
-    def calculate_production_cost(self):
-        total_cost = 0
-        for ingredient in self.ingredients:
-            price = pd.to_numeric(ingredient['price'], errors='coerce')
-            quantity = pd.to_numeric(ingredient['quantity'], errors='coerce')
-            total_cost += price * quantity
-        return total_cost
+    input_value = input(f"\nSelect a machine (1-{len(available_machines)}): ").strip()
 
+    if not input_value:
+        return -1
+    else:
+        try:
+            return int(input_value) - 1
+        except ValueError:
+            print("Invalid input. Defaulting to -1.")
+            return -1
+    
+def get_sort():
 
-# Read the main CSV file
-products_df = pd.read_csv(r'C:\Users\yanso\VSCode proj\hayday\data\HDpriceandxp.csv')
-
-# Read the ingredients CSV file
-ingredients_df = pd.read_csv(r'C:\Users\yanso\VSCode proj\hayday\data\HDingredients.csv', header=None, names=['Product', 'Ingredient', 'Quantity'])
-
-# Capitalize Product and Ingredient columns
-ingredients_df['Product'] = ingredients_df['Product'].str.capitalize()
-ingredients_df['Ingredient'] = ingredients_df['Ingredient'].str.capitalize()
-
-# Create instances of the Product class
-products = []
-
-for index, row in products_df.iterrows():
-    product = Product(row['Name'], row['Price'], row['Time'], row['XP'], row['Machine'])
-    products.append(product)
-
-# Create a dictionary to map product names to Product instances
-product_dict = {product.name: product for product in products}
-
-# Update the Product instances with ingredients information
-for index, row in ingredients_df.iterrows():
-    product_name = row['Product']
-    if product_name in product_dict:
-        ingredient = {
-            'name': row['Ingredient'],
-            'price': None,  # Initialize price
-            'quantity': row['Quantity']
-        }
-        # Find the product with matching name and update ingredient price
-        for product in products:
-            if product.name == ingredient['name']:
-                ingredient['price'] = product.price
-                break
+    print("\nSort by:")
+    print("1. Total Profit")
+    print("2. Profit Per Minute")
+    print("3. Experience Per Minute")
+    print("4. Total Experience")
+    
+    input_value = input("Enter the number corresponding to your choice (1/2/3/4): ").strip()
+    
+    if not input_value:
+        sort_choice = 1
+    else:
+        try:
+            sort_choice = int(input_value)
+        except ValueError:
+            print("Invalid input. Defaulting to 1.")
+            sort_choice = 1
         
-        product_dict[product_name].ingredients.append(ingredient)
+    sort_mapping = {
+        1: 'total_profit',
+        2: 'profit_per_minute',
+        3: 'experience_per_minute',
+        4: 'experience'
+    }
+
+    return sort_mapping.get(sort_choice, 'total_profit')
+
+def append_rare_ingredients(sorted_machine_data, items_df, recipes_df, rare_ingredients):
+
+    sorted_machine_data['rare_ingredients'] = ''
+    
+    ingredient_map = {row['id']: row['name'] for _, row in items_df.iterrows()}
+    
+    for index, row in recipes_df.iterrows():
+        product_id = row['product']
+        ingredient_id = row['ingredient']
+        quantity = row['quantity'] 
+        
+        if ingredient_id in rare_ingredients:
+            if ingredient_id not in ingredient_map:
+                raise ValueError(f"Ingredient ID {ingredient_id} not found in items_df!")
+            
+            ingredient_name = ingredient_map[ingredient_id]
+
+            product_index = sorted_machine_data[sorted_machine_data['id'] == product_id].index
+            for idx in product_index:
+                # Append the ingredient name and quantity, separated by a space
+                current_value = sorted_machine_data.at[idx, 'rare_ingredients']
+                if current_value:
+                    sorted_machine_data.at[idx, 'rare_ingredients'] += f', {quantity} {ingredient_name}'
+                else:
+                    sorted_machine_data.at[idx, 'rare_ingredients'] = f'{quantity} {ingredient_name}'
+    
+    print(sorted_machine_data[['name', 'machine', 'total_profit', 'profit_per_minute', 'experience_per_minute', 'experience', 'rare_ingredients']].to_string())
+
+    
+    return sorted_machine_data
+
+def display_products(config, items_df, recipes_df, rare_ingredients):
+
+    ignore_machines = config.get('ignore_machines', [])
+    
+    available_machines = items_df[~items_df['machine'].isin(ignore_machines)]['machine'].unique()
+    
+    machine_choice = get_machine(available_machines)
+
+    if machine_choice != -1:
+        machine_data = items_df[items_df['machine'] == available_machines[machine_choice]]
+        sorted_machine_data = machine_data.sort_values(by=get_sort(), ascending=False)
+
+    else:
+        sorted_machine_data = items_df[~items_df['machine'].isin(ignore_machines)] \
+            .sort_values(by=['machine', get_sort()], ascending=[True, False])
+
+        
+    append_rare_ingredients(sorted_machine_data, items_df, recipes_df, rare_ingredients)
+    
+    return sorted_machine_data
 
 
-# Define machines to ignore for warning
-ignore_warning_machines = ['Field', 'Mine', 'Sheep', 'Cow' ,'Pig' , 'Chicken' , 'Pomegranate tree' , 'Net Maker', 'Cacao tree' , 'Lure Workbench',
-                           'Apple tree', 'Raspberry bush', 'Blackberry bush', 'Coconut tree', 'Mango tree', 'Banana tree', 'Guava Tree', 'Plum tree',
-                           'Orange tree', 'Peach tree', 'Lemon tree', 'Squirrel House', 'Duck Salon', 'Olive tree', 'Lobster Pool']
 
-# Update the production cost for each product
-for product in products:
-    product.production_cost = product.calculate_production_cost()
-    if product.production_cost == 0 and product.machine not in ignore_warning_machines:
-        print(f"Warning: Product {product.name} has a production cost of 0.")
-        print(f"All attributes: {product}")
 
-'''# Print the products to verify
-for product in products:
-    print(product)
-'''
+
+'''def display_without_rare_ingredients(sorted_machine_data, recipes_df, excluded_ingredients):
+    # Initialize a list to store the ids of rows to be excluded
+    exclude_ids = []
+    
+    # Iterate through the recipes_df to check for ingredients in the excluded list
+    for index, row in recipes_df.iterrows():
+        product_id = row['product']  # Product id in recipes_df
+        ingredient_id = row['ingredient']  # Ingredient id used in the product
+        
+        # If the ingredient_id is in the excluded_ingredients list, mark this product id for exclusion
+        if ingredient_id in excluded_ingredients:
+            exclude_ids.append(product_id)
+    
+    # Filter sorted_machine_data to remove rows with excluded product ids
+    filtered_data = sorted_machine_data[~sorted_machine_data['id'].isin(exclude_ids)]
+
+    #print(f"\nProducts for {selected_machine} sorted by {sort_option}:")
+    print(filtered_data[['name', 'total_profit', 'profit_per_minute', 'experience_per_minute', 'experience']])
+
+    return filtered_data'''
+
+
+
+def main():
+
+    config, items_df, recipes_df, rare_ingredients = run_preprocessing()
+
+    display_products(config, items_df, recipes_df, rare_ingredients)
+
+
+
+if __name__ == "__main__":
+    main()
