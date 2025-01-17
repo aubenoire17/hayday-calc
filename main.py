@@ -30,21 +30,17 @@ def get_sort():
         
         choice = input("Enter the number corresponding to your choice (1/2/3/4): ").strip()
 
-        if choice in ['1', '2', '3', '4']:
+        if choice.isdigit() and 1 <= int(choice) <= 4:
             return choice
         else:
             print("Invalid choice. Please enter 1-4.")
 
 
-def get_choices():
+def get_machine(config, items_df, num_columns=3):
 
-    filter_choice = get_filter()
-    sort_choice = get_sort()
+    ignore_machines = config.get('ignore_machines', [])
     
-    return [filter_choice, sort_choice]
-
-
-def get_machine(available_machines, num_columns=3):
+    available_machines = items_df[~items_df['machine'].isin(ignore_machines)]['machine'].unique()
 
     num_rows = math.ceil(len(available_machines) / num_columns)
     columns = [available_machines[i:i + num_rows] for i in range(0, len(available_machines), num_rows)]
@@ -68,16 +64,40 @@ def get_machine(available_machines, num_columns=3):
         
         print("".join(row_display))
 
-    input_value = input(f"\nSelect a machine (1-{len(available_machines)}): ").strip()
+    choice = input(f"\nSelect a machine (1-{len(available_machines)}): ").strip()
 
-    if not input_value:
-        return -1
+    while True:
+        if choice.isdigit() and 1 <= int(choice) <= len(available_machines):
+            return choice
+        else:
+            print(f"Invalid choice. Please enter 1-{len(available_machines)}.")
+
+def get_unique_sorted_ingredients(recipes_df, items_df):
+    ingredient_map = {row['id']: row['name'] for _, row in items_df.iterrows()}
+
+    unique_ingredient_ids = recipes_df['ingredient'].unique()
+
+    unique_ingredient_names = [
+        ingredient_map[ingredient_id]
+        for ingredient_id in unique_ingredient_ids
+        if ingredient_id in ingredient_map
+    ]
+
+    return sorted(unique_ingredient_names)
+
+
+def get_choices(config, items_df, recipe_df):
+
+    filter_choice = get_filter()
+
+    if filter_choice == 1:
+        get_machine(config, items_df)
     else:
-        try:
-            return int(input_value) - 1
-        except ValueError:
-            print("Invalid input. Defaulting to -1.")
-            return -1
+        get_ingredient(config, items_df, recipe_df)
+    sort_choice = get_sort()
+    
+    return [filter_choice, sort_choice]
+
 
 def append_rare_ingredients(sorted_machine_data, items_df, recipes_df, rare_ingredients):
 
@@ -106,24 +126,14 @@ def append_rare_ingredients(sorted_machine_data, items_df, recipes_df, rare_ingr
     
     print(sorted_machine_data[['name', 'machine', 'total_profit', 'profit_per_minute', 'experience_per_minute', 'experience', 'rare_ingredients']].to_string())
 
-    
     return sorted_machine_data
 
 def display_products(config, items_df, recipes_df, rare_ingredients):
-
-    ignore_machines = config.get('ignore_machines', [])
-    
-    available_machines = items_df[~items_df['machine'].isin(ignore_machines)]['machine'].unique()
     
     machine_choice = get_machine(available_machines)
 
-    if machine_choice != -1:
-        machine_data = items_df[items_df['machine'] == available_machines[machine_choice]]
-        sorted_machine_data = machine_data.sort_values(by=get_sort(), ascending=False)
-
-    else:
-        sorted_machine_data = items_df[~items_df['machine'].isin(ignore_machines)] \
-            .sort_values(by=['machine', get_sort()], ascending=[True, False])
+    machine_data = items_df[items_df['machine'] == available_machines[machine_choice]]
+    sorted_machine_data = machine_data.sort_values(by=get_sort(), ascending=False)
 
         
     append_rare_ingredients(sorted_machine_data, items_df, recipes_df, rare_ingredients)
@@ -161,9 +171,10 @@ def main():
 
     config, items_df, recipes_df, rare_ingredients = run_preprocessing()
 
-    display_products(config, items_df, recipes_df, rare_ingredients)
+    #display_products(config, items_df, recipes_df, rare_ingredients)
 
-
+    unique_ingredients = get_unique_sorted_ingredients(recipes_df, items_df)
+    print(unique_ingredients)
 
 if __name__ == "__main__":
     main()
