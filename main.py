@@ -4,6 +4,46 @@ import yaml
 
 from preprocessing import run_preprocessing
 
+def get_filter():
+
+    while True:
+        print("\nChoose an option to get information:")
+        print("1. By Machine")
+        print("2. By Ingredient")
+        
+        choice = input("Enter the number corresponding to your choice (1/2): ").strip()
+        
+        if choice in ['1', '2']:
+            return choice
+        else:
+            print("Invalid choice. Please enter 1 or 2.")
+
+
+def get_sort():
+
+    while True:
+        print("\nSort by:")
+        print("1. Total Profit")
+        print("2. Profit Per Minute")
+        print("3. Experience Per Minute")
+        print("4. Total Experience")
+        
+        choice = input("Enter the number corresponding to your choice (1/2/3/4): ").strip()
+
+        if choice in ['1', '2', '3', '4']:
+            return choice
+        else:
+            print("Invalid choice. Please enter 1-4.")
+
+
+def get_choices():
+
+    filter_choice = get_filter()
+    sort_choice = get_sort()
+    
+    return [filter_choice, sort_choice]
+
+
 def get_machine(available_machines, num_columns=3):
 
     num_rows = math.ceil(len(available_machines) / num_columns)
@@ -38,34 +78,6 @@ def get_machine(available_machines, num_columns=3):
         except ValueError:
             print("Invalid input. Defaulting to -1.")
             return -1
-    
-def get_sort():
-
-    print("\nSort by:")
-    print("1. Total Profit")
-    print("2. Profit Per Minute")
-    print("3. Experience Per Minute")
-    print("4. Total Experience")
-    
-    input_value = input("Enter the number corresponding to your choice (1/2/3/4): ").strip()
-    
-    if not input_value:
-        sort_choice = 1
-    else:
-        try:
-            sort_choice = int(input_value)
-        except ValueError:
-            print("Invalid input. Defaulting to 1.")
-            sort_choice = 1
-        
-    sort_mapping = {
-        1: 'total_profit',
-        2: 'profit_per_minute',
-        3: 'experience_per_minute',
-        4: 'experience'
-    }
-
-    return sort_mapping.get(sort_choice, 'total_profit')
 
 def append_rare_ingredients(sorted_machine_data, items_df, recipes_df, rare_ingredients):
 
@@ -86,7 +98,6 @@ def append_rare_ingredients(sorted_machine_data, items_df, recipes_df, rare_ingr
 
             product_index = sorted_machine_data[sorted_machine_data['id'] == product_id].index
             for idx in product_index:
-                # Append the ingredient name and quantity, separated by a space
                 current_value = sorted_machine_data.at[idx, 'rare_ingredients']
                 if current_value:
                     sorted_machine_data.at[idx, 'rare_ingredients'] += f', {quantity} {ingredient_name}'
