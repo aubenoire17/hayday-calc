@@ -85,6 +85,44 @@ def get_unique_sorted_ingredients(recipes_df, items_df):
 
     return sorted(unique_ingredient_names)
 
+def get_ingredient_choice(ingredients, num_columns=3):
+    """
+    Display a list of unique ingredients and get the user's selection.
+
+    Args:
+        ingredients (List[str]): Alphabetically sorted list of unique ingredient names.
+        num_columns (int): Number of columns to display.
+
+    Returns:
+        str: The selected ingredient name.
+    """
+    num_rows = math.ceil(len(ingredients) / num_columns)
+    columns = [ingredients[i:i + num_rows] for i in range(0, len(ingredients), num_rows)]
+
+    print("Available ingredients:")
+    
+    max_length = max(len(ingredient) for ingredient in ingredients)
+    column_width = max_length + 2
+    number_width = len(str(len(ingredients))) + 2
+
+    for row in range(num_rows):
+        row_display = []
+        for col in range(num_columns):
+            if row < len(columns[col]):
+                ingredient_name = f"{columns[col][row]}"
+                index = f"{(col * num_rows) + row + 1}"
+                row_display.append(f"{index:<{number_width}} {ingredient_name:<{column_width}}")
+            else:
+                row_display.append(' ' * (number_width + column_width))
+        
+        print("".join(row_display))
+
+    while True:
+        choice = input(f"\nSelect an ingredient (1-{len(ingredients)}): ").strip()
+        if choice.isdigit() and 1 <= int(choice) <= len(ingredients):
+            return ingredients[int(choice) - 1]
+        else:
+            print(f"Invalid choice. Please enter a number between 1 and {len(ingredients)}.")
 
 def get_choices(config, items_df, recipe_df):
 
@@ -174,7 +212,7 @@ def main():
     #display_products(config, items_df, recipes_df, rare_ingredients)
 
     unique_ingredients = get_unique_sorted_ingredients(recipes_df, items_df)
-    print(unique_ingredients)
+    get_ingredient_choice(unique_ingredients)
 
 if __name__ == "__main__":
     main()
