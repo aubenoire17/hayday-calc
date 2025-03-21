@@ -1,6 +1,5 @@
 import math
 import pandas as pd
-import yaml
 
 from preprocessing import run_preprocessing
 
@@ -67,35 +66,59 @@ def get_sort():
 
     return sort_mapping.get(sort_choice, 'total_profit')
 
-def append_rare_ingredients(sorted_machine_data, items_df, recipes_df, rare_ingredients):
+def append_rare_ingredients(sorted_machine_data: pd.DataFrame, 
+                            items_df: pd.DataFrame, 
+                            recipes_df: pd.DataFrame, 
+                            rare_ingredients: list[str]) -> pd.DataFrame:
+    """
+    Appends a column `rare_ingredients` to `sorted_machine_data`, showing rare ingredients used.
 
-    sorted_machine_data['rare_ingredients'] = ''
-    
-    ingredient_map = {row['id']: row['name'] for _, row in items_df.iterrows()}
-    
-    for index, row in recipes_df.iterrows():
-        product_id = row['product']
-        ingredient_id = row['ingredient']
-        quantity = row['quantity'] 
-        
-        if ingredient_id in rare_ingredients:
-            if ingredient_id not in ingredient_map:
-                raise ValueError(f"Ingredient ID {ingredient_id} not found in items_df!")
-            
-            ingredient_name = ingredient_map[ingredient_id]
+    This function maps rare ingredient names to their IDs, filters the `recipes_df`, and aggregates 
+    the rare ingredients used per product.
 
-            product_index = sorted_machine_data[sorted_machine_data['id'] == product_id].index
-            for idx in product_index:
-                # Append the ingredient name and quantity, separated by a space
-                current_value = sorted_machine_data.at[idx, 'rare_ingredients']
-                if current_value:
-                    sorted_machine_data.at[idx, 'rare_ingredients'] += f', {quantity} {ingredient_name}'
-                else:
-                    sorted_machine_data.at[idx, 'rare_ingredients'] = f'{quantity} {ingredient_name}'
-    
-    print(sorted_machine_data[['name', 'machine', 'total_profit', 'profit_per_minute', 'experience_per_minute', 'experience', 'rare_ingredients']].to_string())
+    Args:
+        sorted_machine_data (pd.DataFrame): DataFrame containing product data.
+        items_df (pd.DataFrame): DataFrame mapping ingredient IDs to names.
+        recipes_df (pd.DataFrame): DataFrame listing product recipes (product, ingredient, quantity).
+        rare_ingredients (List[str]): List of rare ingredient names.
 
+    Returns:
+        pd.DataFrame: Updated `sorted_machine_data` with a `rare_ingredients` column.
+    """
+
+    rare_ingredient_ids = items_df[items_df['name'].isin(rare_ingredients)]['id'].tolist()
+
+    filtered_recipes = recipes_df[recipes_df['product'].isin(sorted_machine_data['id'])]
+
+    rare_recipe_agg = (
+        filtered_recipes[filtered_recipes['ingredient'].isin(rare_ingredient_ids)]
+        .merge(items_df[['id', 'name']], left_on='ingredient', right_on='id', how='left')
+        .groupby('product')
+        .apply(
+            lambda x: ', '.join(
+                f"{q} {ingredient_name}" 
+                for q, ingredient_name in zip(x['quantity'], x['name'])
+            ),
+            include_groups=False
+        )
+        .reset_index()
+    )
+
+    if not rare_recipe_agg.empty:
+        rare_recipe_agg.rename(columns={0: 'rare_ingredients'}, inplace=True)
+        sorted_machine_data = sorted_machine_data.merge(
+            rare_recipe_agg, left_on='id', right_on='product', how='left'
+        )
+        sorted_machine_data.drop(columns=['product'], inplace=True)
+    else:
+        sorted_machine_data['rare_ingredients'] = ''
+
+    sorted_machine_data['rare_ingredients'].fillna('', inplace=True)
     
+    print(sorted_machine_data[['name', 'machine', 'total_profit', 'profit_per_minute', 
+                            'experience_per_minute', 'experience', 'rare_ingredients']].to_string())
+
+
     return sorted_machine_data
 
 def display_products(config, items_df, recipes_df, rare_ingredients):
