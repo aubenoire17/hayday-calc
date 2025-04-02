@@ -84,6 +84,7 @@ Sort by:
 |    ├── main.py              # Entry point to run the application
 |    └── preprocessing.py     # Handles initial calculations and data processing
 ├── config.yaml               # Configuration file
+├── requirements.txt          # List of dependencies needed
 └── README.md                 # Project documentation (this file)
 ```
 
