@@ -124,7 +124,7 @@ def calculate_production_cost(items_df, recipes_df):
     return items_df
 
 def update_cost_from_treesnbush(items_df, plants_df):
-    """
+    """ 
     Updates the production cost of items based on tree and bush plant prices.
 
     This function assigns production costs to fruits by mapping their corresponding 
@@ -142,10 +142,10 @@ def update_cost_from_treesnbush(items_df, plants_df):
         pd.DataFrame: Updated `items_df` with modified 'production_cost' values.
 
     Raises:
-        ValueError: If a fruit in `items_df` is not found in `plants_df`.
+        ValueError: If a fruit in `plants_df` is not found in `items_df`.
     """
-    if (missing_fruits := items_df.loc[~items_df['name'].isin(fruit_cost_map), 'name'].unique()).size > 0: 
-        raise ValueError(f"Fruits missing from plants_df: {', '.join(missing_fruits)}")
+    if (missing_fruits := plants_df.loc[~plants_df['fruit'].isin(items_df['name']), 'fruit'].unique()).size > 0: 
+        raise ValueError(f"Fruits in plants_df not found in items_df: {', '.join(missing_fruits)}")
 
     fruit_cost_map = dict(zip(plants_df['fruit'], plants_df['plantprice']))
 
@@ -223,8 +223,9 @@ def update_cost_for_feed(items_df, feed_to_item_map):
 
     Raises:
         ValueError: If any feed in `feed_to_item_map` is missing from `items_df`.
+
     """
-    if (missing_feeds := items_df.loc[~items_df['name'].isin(feed_to_item_map.keys()), 'name'].unique()).size > 0:
+    if len(missing_feeds := set(feed_to_item_map.keys()) - set(items_df['name'])) > 0:
         raise ValueError(f"Feeds missing from items_df: {', '.join(missing_feeds)}")
 
     items_df = update_feed_price(items_df, feed_to_item_map)

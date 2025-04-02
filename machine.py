@@ -143,39 +143,9 @@ def display_products(config, items_df, recipes_df, rare_ingredients):
     return sorted_machine_data
 
 
-
-
-
-'''def display_without_rare_ingredients(sorted_machine_data, recipes_df, excluded_ingredients):
-    # Initialize a list to store the ids of rows to be excluded
-    exclude_ids = []
-    
-    # Iterate through the recipes_df to check for ingredients in the excluded list
-    for index, row in recipes_df.iterrows():
-        product_id = row['product']  # Product id in recipes_df
-        ingredient_id = row['ingredient']  # Ingredient id used in the product
-        
-        # If the ingredient_id is in the excluded_ingredients list, mark this product id for exclusion
-        if ingredient_id in excluded_ingredients:
-            exclude_ids.append(product_id)
-    
-    # Filter sorted_machine_data to remove rows with excluded product ids
-    filtered_data = sorted_machine_data[~sorted_machine_data['id'].isin(exclude_ids)]
-
-    #print(f"\nProducts for {selected_machine} sorted by {sort_option}:")
-    print(filtered_data[['name', 'total_profit', 'profit_per_minute', 'experience_per_minute', 'experience']])
-
-    return filtered_data'''
-
-
-
-def main():
-
+def machine():
     config, items_df, recipes_df, rare_ingredients = run_preprocessing()
-
     display_products(config, items_df, recipes_df, rare_ingredients)
 
-
-
 if __name__ == "__main__":
-    main()
+    machine()
