@@ -97,6 +97,12 @@ This tool relies on the following Python libraries:
 
 - yaml: For configuration handling.
 
+## TODOs
+
+- Update new products and recipes in database
+- Refactor datebases to be up to standard
+- Add a new module to calculate the most efficient use of axes and saws
+
 ## License
 This project is open source and available under the MIT License.
 
