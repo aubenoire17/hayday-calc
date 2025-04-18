@@ -1,4 +1,4 @@
-id,name,cost,time,experience,machine,,,,
+item_id,name,cost,time,experience,machine,,,,
 1,Wheat,3,2 min,1,Field,,,,
 2,Egg,18,20 min,2,Chicken,,,,
 3,Corn,7,5 min,1,Field,,,,

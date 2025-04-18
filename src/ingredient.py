@@ -4,9 +4,9 @@ import pandas as pd
 from preprocessing import run_preprocessing
 
 def get_unique_sorted_ingredients(recipes_df, items_df):
-    ingredient_map = {row['id']: row['name'] for _, row in items_df.iterrows()}
+    ingredient_map = {row['item_id']: row['name'] for _, row in items_df.iterrows()}
 
-    unique_ingredient_ids = recipes_df['ingredient'].unique()
+    unique_ingredient_ids = recipes_df['ingredient_item_id'].unique()
 
     unique_ingredient_names = [
         ingredient_map[ingredient_id]
@@ -122,16 +122,15 @@ def append_rare_ingredients(sorted_machine_data: pd.DataFrame,
     """
     
     # Get the IDs of rare ingredients
-    rare_ingredient_ids = items_df[items_df['name'].isin(rare_ingredients)]['id'].tolist()
+    rare_ingredient_ids = items_df[items_df['name'].isin(rare_ingredients)]['item_id'].tolist()
 
     # Filter recipes that belong to the sorted machine data
-    filtered_recipes = recipes_df[recipes_df['product'].isin(sorted_machine_data['id'])]
+    filtered_recipes = recipes_df[recipes_df['product_item_id'].isin(sorted_machine_data['item_id'])]
 
-    # Aggregate rare ingredients for each product
     rare_recipe_agg = (
-        filtered_recipes[filtered_recipes['ingredient'].isin(rare_ingredient_ids)]
-        .merge(items_df[['id', 'name']], left_on='ingredient', right_on='id', how='left')
-        .groupby('product')
+        filtered_recipes[filtered_recipes['ingredient_item_id'].isin(rare_ingredient_ids)]
+        .merge(items_df[['item_id', 'name']], left_on='ingredient_item_id', right_on='item_id', how='left')
+        .groupby('product_item_id')
         .apply(
             lambda x: ', '.join(
                 f"{q} {ingredient_name}" 
@@ -142,13 +141,12 @@ def append_rare_ingredients(sorted_machine_data: pd.DataFrame,
         .reset_index()
     )
 
-    # Merge rare ingredient data into the sorted machine data
     if not rare_recipe_agg.empty:
         rare_recipe_agg.rename(columns={0: 'rare_ingredients'}, inplace=True)
         sorted_machine_data = sorted_machine_data.merge(
-            rare_recipe_agg, left_on='id', right_on='product', how='left'
+            rare_recipe_agg, left_on='item_id', right_on='product_item_id', how='left'
         )
-        sorted_machine_data.drop(columns=['product'], inplace=True)
+        sorted_machine_data.drop(columns=['product_item_id'], inplace=True)
     else:
         sorted_machine_data['rare_ingredients'] = ''
 
@@ -177,9 +175,9 @@ def display_products(items_df, recipes_df, rare_ingredients) -> None:
     unique_ingredients = get_unique_sorted_ingredients(recipes_df, items_df)
     ingredient_choice = get_ingredient_choice(unique_ingredients)
 
-    id_choice = items_df[items_df['name'] == ingredient_choice]['id'].iloc[0]
-    product_ids_using_ingredient = recipes_df[recipes_df['ingredient'] == id_choice]['product'].unique()
-    filtered_items = items_df[items_df['id'].isin(product_ids_using_ingredient)]
+    id_choice = items_df[items_df['name'] == ingredient_choice]['item_id'].iloc[0]
+    product_ids_using_ingredient = recipes_df[recipes_df['ingredient_item_id'] == id_choice]['product_item_id'].unique()
+    filtered_items = items_df[items_df['item_id'].isin(product_ids_using_ingredient)]
 
     sort_criterion = get_sort()
     

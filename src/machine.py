@@ -119,14 +119,14 @@ def append_rare_ingredients(sorted_machine_data: pd.DataFrame,
         pd.DataFrame: Updated `sorted_machine_data` with a `rare_ingredients` column.
     """
 
-    rare_ingredient_ids = items_df[items_df['name'].isin(rare_ingredients)]['id'].tolist()
+    rare_ingredient_ids = items_df[items_df['name'].isin(rare_ingredients)]['item_id'].tolist()
 
-    filtered_recipes = recipes_df[recipes_df['product'].isin(sorted_machine_data['id'])]
+    filtered_recipes = recipes_df[recipes_df['product_item_id'].isin(sorted_machine_data['item_id'])]
 
     rare_recipe_agg = (
-        filtered_recipes[filtered_recipes['ingredient'].isin(rare_ingredient_ids)]
-        .merge(items_df[['id', 'name']], left_on='ingredient', right_on='id', how='left')
-        .groupby('product')
+        filtered_recipes[filtered_recipes['ingredient_item_id'].isin(rare_ingredient_ids)]
+        .merge(items_df[['item_id', 'name']], left_on='ingredient_item_id', right_on='item_id', how='left')
+        .groupby('product_item_id')
         .apply(
             lambda x: ', '.join(
                 f"{q} {ingredient_name}" 
@@ -140,9 +140,9 @@ def append_rare_ingredients(sorted_machine_data: pd.DataFrame,
     if not rare_recipe_agg.empty:
         rare_recipe_agg.rename(columns={0: 'rare_ingredients'}, inplace=True)
         sorted_machine_data = sorted_machine_data.merge(
-            rare_recipe_agg, left_on='id', right_on='product', how='left'
+            rare_recipe_agg, left_on='item_id', right_on='product_item_id', how='left'
         )
-        sorted_machine_data.drop(columns=['product'], inplace=True)
+        sorted_machine_data.drop(columns=['product_item_id'], inplace=True)
     else:
         sorted_machine_data['rare_ingredients'] = ''
 
