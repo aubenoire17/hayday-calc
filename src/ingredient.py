@@ -150,8 +150,9 @@ def append_rare_ingredients(sorted_machine_data: pd.DataFrame,
     else:
         sorted_machine_data['rare_ingredients'] = ''
 
-    # Fill NaN values with empty string and display the results
-    sorted_machine_data['rare_ingredients'].fillna('', inplace=True)
+    sorted_machine_data['rare_ingredients'] = (
+        sorted_machine_data['rare_ingredients'].fillna('')
+    )    
     
     return sorted_machine_data
 

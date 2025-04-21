@@ -1,390 +1,403 @@
-item_id,name,cost,time,experience,machine,,,,
-1,Wheat,3,2 min,1,Field,,,,
-2,Egg,18,20 min,2,Chicken,,,,
-3,Corn,7,5 min,1,Field,,,,
-4,Bread,21,5 min,3,Bakery,,,,
-5,Chicken feed,7,5 min,1,Feed Mill,,,,
-6,Soybean,10,20 min,2,Field,,,,
-7,Cow feed,14,10 min,2,Feed Mill,,,,
-8,Milk,32,1 h,3,Cow,,,,
-9,Cream,50,20 min,6,Dairy,,,,
-10,Sugarcane,14,30 min,3,Field,,,,
-11,Corn bread,72,30 min,8,Bakery,,,,
-12,Brown sugar,32,20 min,4,Sugar Mill,,,,
-13,Popcorn,32,30 min,4,Popcorn Pot,,,,
-14,Carrot,7,10 min,2,Field,,,,
-15,Butter,82,30 min,10,Dairy,,,,
-16,Pancake,108,30 min,13,BBQ Grill,,,,
-17,Pig feed,14,20 min,2,Feed Mill,,,,
-18,Bacon,50,4 h,5,Pig,,,,
-19,Cookie,104,1 h,13,Bakery,,,,
-20,Bacon and eggs,201,1 h,24,BBQ Grill,,,,
-21,Cheese,122,1 h,15,Dairy,,,,
-22,Indigo,25,2 h,5,Field,,,,
-23,White sugar,50,40 min,6,Sugar Mill,,,,
-24,Carrot pie,82,1 h,10,Pie Oven,,,,
-25,Pumpkin,32,3 h,6,Field,,,,
-26,Pumpkin pie,158,2 h,19,Pie Oven,,,,
-27,Apple,39,16 h,7,Apple tree,,,,
-28,Sheep feed,14,30 min,3,Feed Mill,,,,
-29,Wool,54,6 h,5,Sheep,,,,
-30,Buttered popcorn,126,1 h,15,Popcorn Pot,,,,
-31,Sweater,151,2 h,18,Loom,,,,
-32,Cotton,28,2 h 30 min,6,Field,,,,
-33,Bacon pie,219,3 h,26,Pie Oven,,,,
-34,Syrup,90,1 h 30 min,11,Sugar Mill,,,,
-35,Cotton fabric,108,30 min,13,Loom,,,,
-36,Hamburger,180,2 h,22,BBQ Grill,,,,
-37,Raspberry,46,18 h,9,Raspberry bush,,,,
-38,Raspberry muffin,140,45 min,17,Bakery,,,,
-39,Blue woolly hat,111,1 h,13,Loom,,,,
-40,Cotton shirt,241,45 min,29,Sewing Machine,,,,
-41,Blue sweater,208,3 h,25,Loom,,,,
-42,Carrot cake,165,1 h 30 min,20,Cake Oven,,,,
-43,Wooly chaps,309,1 h 30 min,37,Sewing Machine,,,,
-44,Cherry,68,1 d 3 h,13,Cherry tree,,,,
-45,Cream cake,219,3 h,26,Cake Oven,,,,
-46,Red berry cake,255,1 h,31,Cake Oven,,,,
-47,Cheesecake,284,4 h,34,Cake Oven,,,,
-48,Silver ore,18,Instant,5,Mine,,,,
-49,Gold ore,21,Instant,6,Mine,,,,
-50,Platinum ore,32,Instant,7,Mine,,,,
-51,Silver bar,147,8 h,18,Smelter,,,,
-52,Chili Pepper,36,4 h,7,Field,,,,
-53,Chili popcorn,122,2 h,15,Popcorn Pot,,,,
-54,Gold bar,180,12 h,21,Smelter,,,,
-55,Platinum bar,205,16 h,24,Smelter,,,,
-56,Violet dress,327,2 h 15 min,39,Sewing Machine,,,,
-57,Blackberry,82,1 d 8 h,16,Blackberry bush,,,,
-58,Blackberry muffin,226,45 min,27,Bakery,,,,
-59,Carrot juice,46,30 min,6,Juice Press,,,,
-60,Red lure,0,1 h 30 min,1,Lure Workbench,,,,
-61,Green lure,0,1 h 15 min,2,Lure Workbench,,,,
-62,Blue lure,0,1 h,3,Lure Workbench,,,,
-63,Purple lure,0,45 min,4,Lure Workbench,,,,
-64,Gold lure,0,30 min,5,Lure Workbench,,,,
-65,Fish fillet,54,Instant,12,Fish,,,,
-66,Fish burger,226,2 h,27,BBQ Grill,,,,
-67,Apple pie,270,2 h 30 min,32,Pie Oven,,,,
-68,Fish pie,226,2 h,27,Pie Oven,,,,
-69,Apple juice,129,2 h,15,Juice Press,,,,
-70,Vanilla ice cream,172,2 h,20,Ice Cream Maker,,,,
-71,Tomato,43,6 h,8,Field,,,,
-72,Roasted tomatoes,118,1 h 30 min,14,BBQ Grill,,,,
-73,Cherry juice,216,2 h 30 min,26,Juice Press,,,,
-74,Fishing net,0,4 h,7,Net Maker,,,,
-75,Mystery net,0,3 h,7,Net Maker,,,,
-76,Tomato juice,162,1 h 30 min,19,Juice Press,,,,
-77,Berry juice,205,3 h,24,Juice Press,,,,
-78,Goat feed,14,40 min,3,Feed Mill,,,,
-79,Goat milk,64,8 h,6,Goat,,,,
-80,Goat cheese,162,1 h 30 min,19,Dairy,,,,
-81,Pizza,190,15 min,23,Bakery,,,,1 d 8 h
-82,Coal,10,Instant,3,Mine,,,,45 min
-83,Refined coal,108,6 h,13,Smelter,,,,8 h
-84,Cherry popsicle,352,3 h,42,Ice Cream Maker,,,,1 h 30 min
-85,Strawberry,50,8 h,10,Field,,,,Instant
-86,Feta pie,223,1 h 30 min,26,Pie Oven,,,,
-87,Iron ore,14,Instant,4,Mine,,,,
-88,Iron bar,129,7 h,15,Smelter,,,,
-89,Strawberry ice cream,331,4 h,40,Ice Cream Maker,,,,
-90,Wheat bundle,50,1 h 30 min,10,Feed Mill,,,,
-91,Meat bucket,72,45 min,15,Feed Mill,,,,
-92,Potato,36,3 h 40 min,7,Field,,,,
-93,Strawberry cake,316,3 h,38,Cake Oven,,,,
-94,Baked potato,298,35 min,36,BBQ Grill,,,,
-95,Apple jam,219,6 h,26,Jam Maker,,,,
-96,Chocolate cake,320,2 h,38,Cake Oven,,,,
-97,Casserole,367,2 h,44,Pie Oven,,,,
-98,Cacao,86,1 d 10 h,16,Cacao tree,,,,
-99,Raspberry jam,252,7 h,30,Jam Maker,,,,
-100,Spicy pizza,226,15 min,27,Bakery,,,,
-101,Blackberry jam,388,8 h,46,Jam Maker,,,,
-102,Potato feta cake,309,2 h,37,Cake Oven,,,,
-103,Cherry jam,334,7 h,40,Jam Maker,,,,
-104,Bracelet,514,2 h,61,Jeweler,,,,
-105,Potato bread,284,45 min,34,Bakery,,,,
-106,Shepherds pie,280,1 h 40 min,34,Pie Oven,,,,
-107,Chocolate ice cream,342,2 h 30 min,41,Ice Cream Maker,,,,
-108,Honeycomb,68,Instant,8,Beehive tree,,,,
-109,Necklace,727,3 h,87,Jeweler,,,,
-110,Honey,154,20 min,19,Honey Extractor,,,,
-111,Honey popcorn,360,1 h 30 min,43,Popcorn Pot,,,,
-112,Diamond ring,824,4 h,98,Jeweler,,,,
-113,Fish and chips,244,1 h 30 min,29,BBQ Grill,,,,
-114,Iron bracelet,658,1 h 30 min,79,Jeweler,,,,
-115,Coffee bean,64,1 d 1 h,12,Coffee bush,,,,
-116,Espresso,248,5 min,29,Coffee Kiosk,,,,
-117,Honey apple cake,482,3 h 20 min,57,Cake Oven,,,,
-118,Caffe latte,219,10 min,26,Coffee Kiosk,,,,
-119,Chocolate popcorn,248,2 h 30 min,29,Popcorn Pot,,,,
-120,Lobster trap,0,2 h,5,Net Maker,,,,
-121,Lobster tail,201,6 h,24,Lobster Pool,,,,
-122,Frutti di Mare pizza,403,15 min,48,Bakery,,,,
-123,Caffe mocha,291,15 min,35,Coffee Kiosk,,,,
-124,Raspberry mocha,259,30 min,31,Coffee Kiosk,,,,
-125,Lobster soup,612,2 h 30 min,73,Soup Kitchen,,,,
-126,Hot chocolate,316,25 min,38,Coffee Kiosk,,,,
-127,Tomato soup,478,1 h 30 min,57,Soup Kitchen,,,,
-128,Red scarf,288,2 h 30 min,34,Loom,,,,
-129,Lobster skewer,417,40 min,50,BBQ Grill,,,,
-130,Beeswax,234,45 min,28,Honey Extractor,,,,
-131,Strawberry candle,370,2 h,44,Candle Maker,,,,
-132,Rustic bouquet,208,45 min,25,Flower Shop,,,,
-133,Pumpkin soup,392,2 h,47,Soup Kitchen,,,,
-134,Asparagus,43,6 h,8,Field,,,,
-135,Asparagus quiche,302,2 h,36,Pie Oven,,,,
-136,Strawberry jam,270,7 h 30 min,32,Jam Maker,,,,
-137,Duck trap,0,60 min,3,Net Maker,,,,
-138,Duck feather,140,3 h,17,Duck Salon,,,,
-139,Sesame,18,1 h,4,Field,,,,
-140,Sesame ice cream,176,2 h,21,Ice Cream Maker,,,,
-141,Caramel apple,255,2 h,31,Candy Machine,,,,
-142,Pillow,676,3 h,81,Sewing Machine,,,,
-143,Asparagus soup,255,1 h,30,Soup Kitchen,,,,
-144,Toffee,176,1 h 30 min,21,Candy Machine,,,,
-145,Raspberry candle,360,1 h 45 min,43,Candle Maker,,,,
-146,Pineapple,14,30 min,3,Field,,,,
-147,Pineapple juice,68,45 min,8,Juice Press,,,,
-148,Fish soup,298,3 h,35,Soup Kitchen,,,,
-149,Lily,21,1 h 30 min,5,Field,,,,
-150,Soy sauce,154,3 h,19,Sauce Maker,,,,
-151,Chocolate,460,20 h,55,Candy Machine,,,,
-152,Fancy cake,450,15 min,49,Cake Oven,,,,
-153,Rice,18,45 min,3,Field,,,,
-154,Sushi roll,489,1 h,58,Sushi Bar,,,,
-155,Olive,82,1 d,17,Olive tree,,,,
-156,Lollipop,342,12 h,41,Candy Machine,,,,
-157,Lettuce,32,3 h 30 min,7,Field,,,,
-158,Feta salad,745,1 h 30 min,89,Salad Bar,,,,
-159,Lobster sushi,637,1 h,76,Sushi Bar,,,,
-160,Blanket,1098,3 h 30 min,131,Sewing Machine,,,,
-161,Jelly beans,684,24 h,81,Candy Machine,,,,
-162,Olive oil,277,45 min,33,Sauce Maker,,,,
-163,Garlic,14,30 min,3,Field,,,,
-164,Garlic bread,198,15 min,24,BBQ Grill,,,,
-165,Veggie bagel,532,40 min,63,Sandwich Bar,,,,
-166,Mayonnaise,367,15 min,44,Sauce Maker,,,,
-167,BLT salad,723,1 h 45 min,86,Salad Bar,,,,
-168,Caramel latte,345,15 min,41,Coffee Kiosk,,,,
-169,Peanuts,234,Instant,43,Squirrel House,,,,
-170,Sunflower,21,1 h 30 min,5,Field,,,,
-171,Egg sushi,550,2 h,66,Sushi Bar,,,,
-172,Honey peanuts,468,40 min,64,Candy Machine,,,,
-173,Seafood salad,763,2 h,91,Salad Bar,,,,
-174,Berry smoothie,547,1 h 15 min,65,Smoothie Mixer,,,,
-175,Snack mix,309,45 min,50,Popcorn Pot,,,,
-176,Bright bouquet,338,20 min,40,Flower Shop,,,,
-177,Bacon toast,648,1 h 40 min,77,Sandwich Bar,,,,
-178,Pineapple cake,259,1 h 15 min,31,Cake Oven,,,,
-179,Chocolate pie,514,1 h 15 min,70,Pie Oven,,,,
-180,Cabbage,18,45 min,3,Field,,,,
-181,Cabbage soup,270,1 h 30 min,32,Soup Kitchen,,,,
-182,Lemon,93,1 d 5 h,18,Lemon tree,,,,
-183,Lemon curd,378,25 min,45,Sauce Maker,,,,
-184,Olive dip,468,45 min,56,Sauce Maker,,,,
-185,Egg sandwich,583,1 h 20 min,69,Sandwich Bar,,,,
-186,Green smoothie,320,45 min,38,Smoothie Mixer,,,,
-187,Fresh pasta,43,15 min,5,Pasta Maker,,,,
-188,Pasta salad,759,2 h 30 min,90,Salad Bar,,,,
-189,Lemon pie,446,2 h 15 min,53,Pie Oven,,,,
-190,Grilled asparagus,486,1 h 15 min,58,BBQ Grill,,,,
-191,Onion,39,5 h,8,Field,,,,
-192,Grilled onion,190,1 h,23,BBQ Grill,,,,
-193,Lemon cake,896,2 h 30 min,107,Cake Oven,,,,
-194,Peanut butter milkshake,619,1 h 40 min,86,Ice Cream Maker,,,,
-195,Tomato sauce,230,30 min,27,Sauce Maker,,,,
-196,Honey toast,255,1 h,31,Sandwich Bar,,,,
-197,Fried rice,205,1 h,24,Wok Kitchen,,,,
-198,Yogurt smoothie,349,1 h,42,Smoothie Mixer,,,,
-199,Cloche hat,468,2 h,56,Hat Maker,,,,
-200,Cucumber,14,35 min,3,Field,,,,
-201,Cucumber smoothie,266,40 min,32,Smoothie Mixer,,,,
-202,Orange,97,1 d 7 h,19,Orange tree,,,,
-203,Flower shawl,295,1 h 30 min,35,Loom,,,,
-204,Orange juice,234,2 h,28,Juice Press,,,,
-205,Peanut butter and jelly sandwich,601,25 min,80,Sandwich Bar,,,,
-206,Onion soup,327,2 h 30 min,39,Soup Kitchen,,,,
-207,Lemon candle,457,2 h 15 min,55,Candle Maker,,,,
-208,Top hat,619,3 h 30 min,74,Hat Maker,,,,
-209,Gnocchi,475,1 h 20 min,57,Pasta Kitchen,,,,
-210,Beetroot,14,40 min,3,Field,,,,
-211,Winter veggies,198,25 min,24,BBQ Grill,,,,
-212,Rice noodles,100,20 min,12,Pasta Maker,,,,
-213,Noodle soup,432,2 h,52,Soup Kitchen,,,,
-214,Gracious bouquet,500,40 min,60,Flower Shop,,,,
-215,Bell pepper,36,4 h 30 min,7,Field,,,,
-216,Marmalade,457,8 h 30 min,54,Jam Maker,,,,
-217,Sun hat,558,2 h 30 min,66,Hat Maker,,,,
-218,Veggie lasagna,532,1 h 40 min,63,Pasta Kitchen,,,,
-219,Veggie platter,266,2 h,32,Salad Bar,,,,
-220,Hot dog,370,30 min,44,Hot Dog Stand,,,,
-221,Coleslaw,468,1 h 15 min,56,Salad Bar,,,,
-222,Cotton Candy,226,30 min,27,Candy Machine,,,,
-223,Peach,100,1 d 6 h,20,Peach tree,,,,
-224,Peach tart,435,2 h 30 min,52,Pie Oven,,,,
-225,Tofu dog,367,45 min,44,Hot Dog Stand,,,,
-226,Big sushi roll,648,1 h 30 min,77,Sushi Bar,,,,
-227,Beetroot salad,234,45 min,28,Salad Bar,,,,
-228,Plain Donut,129,15 min,15,Donut Maker,,,,
-229,Salsa,252,20 min,30,Sauce Maker,,,,
-230,Taco,396,45 min,47,Taco Kitchen,,,,
-231,Colourful omelet,136,1 h,16,Omelet Station,,,,
-232,Spring omelet,230,40 min,27,Omelet Station,,,,
-233,Summer rolls,316,1 h,38,Salad Bar,,,,
-234,Orange sorbet,399,3 h 30 min,48,Ice Cream Maker,,,,
-235,Corn dog,529,1 h,63,Hot Dog Stand,,,,
-236,Potato soup,255,2 h 30 min,31,Soup Kitchen,,,,
-237,Ginger,28,2 h 30 min,6,Field,,,,
-238,Sesame brittle,270,1 h,32,Candy Machine,,,,
-239,Affogato,435,20 min,56,Ice Cream Maker,,,,
-240,Fish taco,392,1 h 30 min,47,Taco Kitchen,,,,
-241,Peach jam,464,8 h,55,Jam Maker,,,,
-242,Lobster pasta,637,2 h,76,Pasta Kitchen,,,,
-243,Cucumber sandwich,464,35 min,55,Sandwich Bar,,,,
-244,Spicy fish,543,1 h 30 min,65,Wok Kitchen,,,,
-245,Sprinkled Donut,313,20 min,37,Donut Maker,,,,
-246,Cheese omelet,464,1 h 30 min,55,Omelet Station,,,,
-247,Tea leaf,43,6 h 30 min,9,Field,,,,
-248,Green tea,241,30 min,29,Tea Stand,,,,
-249,Onion dog,306,1 h 15 min,36,Hot Dog Stand,,,,
-250,Stuffed peppers,352,20 min,42,BBQ Grill,,,,
-251,Milk tea,190,45 min,23,Tea Stand,,,,
-252,Bell pepper soup,439,1 h,52,Soup Kitchen,,,,
-253,Chocolate fondue,626,25 min,74,Fondue Pot,,,,
-254,Peony,36,4 h,7,Field,,,,
-255,Quesadilla,241,1 h,29,Taco Kitchen,,,,
-256,Fruit salad,597,2 h,71,Salad Bar,,,,
-257,Crunchy Donut,594,30 min,71,Donut Maker,,,,
-258,Pasta carbonara,410,2 h 30 min,49,Pasta Kitchen,,,,
-259,Peach ice cream,450,3 h,54,Ice Cream Maker,,,,
-260,Honey tea,313,40 min,37,Tea Stand,,,,
-261,Broccoli,21,1 h 30 min,4,Field,,,,
-262,Broccoli pasta,345,1 h,41,Pasta Kitchen,,,,
-263,Rice omelet,572,2 h,68,Omelet Station,,,,
-264,Summer salad,554,3 h,66,Salad Bar,,,,
-265,Grapes,32,3 h,6,Field,,,,
-266,Grape juice,104,2 h 30 min,13,Juice Press,,,,
-267,Onion melt,417,1 h 30 min,50,Sandwich Bar,,,,
-268,Honey soap,327,1 h,39,Bath Kiosk,,,,
-269,Lemon lotion,403,1 h 15 min,48,Bath Kiosk,,,,
-270,Colorful Candles,324,1 h 50 min,39,Candle Maker,,,,
-271,Mint,32,3 h,6,Field,,,,
-272,Grape jam,162,6 h 30 min,19,Jam Maker,,,,
-273,Mint ice cream,288,2 h 15 min,34,Ice Cream Maker,,,,
-274,Flower crown,331,2 h,40,Hat Maker,,,,
-275,Lemon tea,241,20 min,29,Tea Stand,,,,
-276,Bacon fondue,507,30 min,60,Fondue Pot,,,,
-277,Peanut noodles,597,45 min,80,Wok Kitchen,,,,
-278,Gingerbread cookie,273,30 min,33,Bakery,,,,
-279,Cream Donut,230,25 min,27,Donut Maker,,,,
-280,Nachos,432,1 h 15 min,52,Taco Kitchen,,,,
-281,Spicy pasta,576,1 h 30 min,69,Pasta Kitchen,,,,
-282,Broccoli soup,237,1 h 15 min,28,Soup Kitchen,,,,
-283,Bacon fries,302,25 min,36,Deep Fryer,,,,
-284,Potato Omelet,270,1 h 15 min,32,Omelet Station,,,,
-285,Mixed smoothie,504,30 min,60,Smoothie Mixer,,,,
-286,Banana,104,27 h,20,Banana tree,,,,
-287,Iced banana latte,277,20 min,33,Coffee Kiosk,,,,
-288,Apple ginger tea,169,30 min,20,Tea Stand,,,,
-289,Bacon Donut,388,30 min,46,Donut Maker,,,,
-290,Passion fruit,18,1 h,4,Field,,,,
-291,Passion fruit juice,64,45 min,8,Juice Press,,,,
-292,Orange tea,255,40 min,30,Tea Stand,,,,
-293,Fruit cake,450,3 h,54,Cake Oven,,,,
-294,Mushroom,10,20 min,2,Field,,,,
-295,Mushroom salad,216,1 h,26,Salad Bar,,,,
-296,Tofu stir fry,306,1 h 15 min,37,Wok Kitchen,,,,
-297,Candy bouquet,554,20 min,66,Flower Shop,,,,
-298,Eggplant,14,40 min,3,Field,,,,
-299,Grilled eggplant,324,40 min,39,BBQ Grill,,,,
-300,Banana bread,424,30 min,50,Bakery,,,,
-301,Cheese fondue,493,20 min,59,Fondue Pot,,,,
-302,Hand pies,295,20 min,35,Deep Fryer,,,,
-303,Pickles,270,4 h,32,Preservation Station,,,,
-304,Watermelon,39,5 h,8,Field,,,,
-305,Iced tea,252,30 min,30,Tea Stand,,,,
-306,Goat cheese toast,302,50 min,36,Sandwich Bar,,,,
-307,Watermelon juice,108,1 h,13,Juice Press,,,,
-308,Birthday Bouquet,349,20 min,42,Flower Shop,,,,
-309,Passion fruit pie,111,50 min,13,Pie Oven,,,,
-310,Soft bouquet,298,30 min,36,Flower Shop,,,,
-311,Black sesame smoothie,313,45 min,37,Smoothie Mixer,,,,
-312,Exfoliating soap,363,1 h,43,Bath Kiosk,,,,
-313,Filled Donut,403,35 min,48,Donut Maker,,,,
-314,Plum,82,1 d,16,Plum tree,,,,
-315,Banana pancakes,352,1 h,42,BBQ Grill,,,,
-316,Plum jam,385,5 h,46,Jam Maker,,,,
-317,Clay,18,1 h 50 min,5,Field,,,,
-318,Tea pot,219,3 h 40 min,26,Pottery Studio,,,,
-319,Floral candle,442,2 h,53,Candle Maker,,,,
-320,Chocolate roll,604,1 h 30 min,72,Cake Oven,,,,
-321,Canned fish,471,3 h 40 min,56,Preservation Station,,,,
-322,Chickpea,18,1 h,4,Field,,,,
-323,Hummus,277,30 min,33,Sauce Maker,,,,
-324,Banana split,403,3 h 30 min,48,Ice Cream Maker,,,,
-325,Fish skewer,176,30 min,21,BBQ Grill,,,,
-326,Passion fruit jam,118,5 h 20 min,14,Jam Maker,,,,
-327,Potted plant,151,3 h 40 min,26,Pottery Studio,,,,
-328,Mint tea,255,35 min,31,Tea Stand,,,,
-329,Mushroom pot pie,162,1 h,19,Pie Oven,,,,
-330,Mango,100,1 d 8 h,20,Mango tree,,,,
-331,Mango juice,230,50 min,27,Juice Press,,,,
-332,Flower pendant,698,1 h,83,Jeweler,,,,
-333,Chili poppers,406,40 min,48,Deep Fryer,,,,
-334,Falafel,226,55 min,27,Deep Fryer,,,,
-335,Kimchi,219,5 h,26,Preservation Station,,,,
-336,Eggplant parmesan,442,45 min,53,Pie Oven,,,,
-337,Honey face mask,320,1 h 30 min,38,Bath Kiosk,,,,
-338,Clay mug,212,3 h 20 min,25,Pottery Studio,,,,
-339,Rich fudge,644,2 h,77,Fudge Shop,,,,
-340,Cocoa smoothie,511,40 min,61,Smoothie Mixer,,,,
-341,Fried candy bar,658,15 min,87,Deep Fryer,,,,
-342,Tart dressing,288,30 min,34,Sauce Maker,,,,
-343,Tropical fondue,417,35 min,50,Fondue Pot,,,,
-344,Mushroom pasta,280,1 h 15 min,33,Pasta Kitchen,,,,
-345,Coconut,108,1 d 12 h,21,Coconut tree,,,,
-346,Macaroon,421,30 min,50,Bakery,,,,
-347,Plum smoothie,522,35 min,62,Smoothie Mixer,,,,
-348,Dried fruit,266,3 h,32,Preservation Station,,,,
-349,Mint fudge,522,2 h 30 min,62,Fudge Shop,,,,
-350,Coconut ice cream,320,15 min,38,Ice Cream Maker,,,,
-351,Samosa,223,1 h 15 min,27,Deep Fryer,,,,
-352,Plain yogurt,234,2 h,28,Yogurt Maker,,,,
-353,Mushroom soup,176,1 h 20 min,21,Soup Kitchen,,,,
-354,Chili fudge,540,2 h 50 min,64,Fudge Shop,,,,
-355,Tropical smoothie,475,40 min,57,Smoothie Mixer,,,,
-356,Guava,111,1 d 10 h,22,Guava Tree,,,,
-357,Guava juice,252,55 min,30,Juice Press,,,,
-358,Guava compote,421,4 h 20 min,50,Preservation Station,,,,
-359,Strawberry yogurt,529,40 min,63,Yogurt Maker,,,,
-360,Veggie bouquet,352,15 min,42,Flower Shop,,,,
-361,Chickpea stew,284,1 h 30 min,34,Stew Pot,,,,
-362,Fruit sorbet,518,1 h,62,Ice Cream Maker,,,,
-363,Pomegranate,111,1 d 3 h,22,Pomegranate tree,,,,
-364,Pomegranate tea,313,34 min,37,Tea Stand,,,,
-365,Lemon fudge,590,1 h 50 min,70,Fudge Shop,,,,
-366,Pomegranate cake,316,2 h 40 min,38,Cake Oven,,,,
-367,Hummus wrap,374,30 min,45,Sandwich Bar,,,,
-368,Tropical yogurt,457,1 h,54,Yogurt Maker,,,,
-369,Chili stew,370,2 h,44,Stew Pot,,,,
-370,Plain cupcake,280,40 min,34,Cupcake Maker,,,,
-371,Guava cupcake,583,1 h 10 min,70,Cupcake Maker,,,,
-372,Rice ball,464,45 min,55,Sushi Bar,,,,
-373,Peanut fudge,1141,1 h 30 min,136,Fudge Shop,,,,
-374,Tropical cupcake,572,1 h 30 min,68,Cupcake Maker,,,,
-375,Winter stew,295,2 h 20 min,35,Stew Pot,,,,
-376,Cookie cupcake,712,2 h,85,Cupcake Maker,,,,
-377,Plain waffles,198,25 min,24,Waffle Maker,,,,
-378,Berry waffles,604,35 min,72,Waffle Maker,,,,
-379,Orange salad,558,45 min,66,Salad Bar,,,,
-380,Chocolate waffles,637,40 min,76,Waffle Maker,,,,
-381,Breakfast waffles,424,45 min,51,Waffle Maker,,,,
-382,Breakfast Bowl,604,50 min,72,Yogurt Maker,,,,
-383,Apple Porridge,522,20 min,62,Porridge Bar,,,,
-384,Pineapple Coconut Bars,284,40 min,34,Bakery,,,,
-385,Sweet Porridge,466,45 min,55,Porridge Bar,,,,
-386,Rich Soap,266,1 h 10 min,32,Bath Kiosk,,,,
-387,Fresh Porridge,435,35 min,52,Porridge Bar,,,,
-388,Oats,7,7 min,1,Field,,,,
-389,Diamond,0,Instant,0,Mine,,,,
+item_id,name,cost,time,experience,machine
+1,Wheat,3,2 min,1,Field
+2,Egg,18,20 min,2,Chicken
+3,Corn,7,5 min,1,Field
+4,Bread,21,5 min,3,Bakery
+5,Chicken feed,7,5 min,1,Feed Mill
+6,Soybean,10,20 min,2,Field
+7,Cow feed,14,10 min,2,Feed Mill
+8,Milk,32,1 h,3,Cow
+9,Cream,50,20 min,6,Dairy
+10,Sugarcane,14,30 min,3,Field
+11,Corn bread,72,30 min,8,Bakery
+12,Brown sugar,32,20 min,4,Sugar Mill
+13,Popcorn,32,30 min,4,Popcorn Pot
+14,Carrot,7,10 min,2,Field
+15,Butter,82,30 min,10,Dairy
+16,Pancake,108,30 min,13,BBQ Grill
+17,Pig feed,14,20 min,2,Feed Mill
+18,Bacon,50,4 h,5,Pig
+19,Cookie,104,1 h,13,Bakery
+20,Bacon and eggs,201,1 h,24,BBQ Grill
+21,Cheese,122,1 h,15,Dairy
+22,Indigo,25,2 h,5,Field
+23,White sugar,50,40 min,6,Sugar Mill
+24,Carrot pie,82,1 h,10,Pie Oven
+25,Pumpkin,32,3 h,6,Field
+26,Pumpkin pie,158,2 h,19,Pie Oven
+27,Apple,39,16 h,7,Apple tree
+28,Sheep feed,14,30 min,3,Feed Mill
+29,Wool,54,6 h,5,Sheep
+30,Buttered popcorn,126,1 h,15,Popcorn Pot
+31,Sweater,151,2 h,18,Loom
+32,Cotton,28,2 h 30 min,6,Field
+33,Bacon pie,219,3 h,26,Pie Oven
+34,Syrup,90,1 h 30 min,11,Sugar Mill
+35,Cotton fabric,108,30 min,13,Loom
+36,Hamburger,180,2 h,22,BBQ Grill
+37,Raspberry,46,18 h,9,Raspberry bush
+38,Raspberry muffin,140,45 min,17,Bakery
+39,Blue woolly hat,111,1 h,13,Loom
+40,Cotton shirt,241,45 min,29,Sewing Machine
+41,Blue sweater,208,3 h,25,Loom
+42,Carrot cake,165,1 h 30 min,20,Cake Oven
+43,Wooly chaps,309,1 h 30 min,37,Sewing Machine
+44,Cherry,68,1 d 3 h,13,Cherry tree
+45,Cream cake,219,3 h,26,Cake Oven
+46,Red berry cake,255,1 h,31,Cake Oven
+47,Cheesecake,284,4 h,34,Cake Oven
+48,Silver ore,18,Instant,5,Mine
+49,Gold ore,21,Instant,6,Mine
+50,Platinum ore,32,Instant,7,Mine
+51,Silver bar,147,8 h,18,Smelter
+52,Chili Pepper,36,4 h,7,Field
+53,Chili popcorn,122,2 h,15,Popcorn Pot
+54,Gold bar,180,12 h,21,Smelter
+55,Platinum bar,205,16 h,24,Smelter
+56,Violet dress,327,2 h 15 min,39,Sewing Machine
+57,Blackberry,82,1 d 8 h,16,Blackberry bush
+58,Blackberry muffin,226,45 min,27,Bakery
+59,Carrot juice,46,30 min,6,Juice Press
+60,Red lure,0,1 h 30 min,1,Lure Workbench
+61,Green lure,0,1 h 15 min,2,Lure Workbench
+62,Blue lure,0,1 h,3,Lure Workbench
+63,Purple lure,0,45 min,4,Lure Workbench
+64,Gold lure,0,30 min,5,Lure Workbench
+65,Fish fillet,54,Instant,12,Fish
+66,Fish burger,226,2 h,27,BBQ Grill
+67,Apple pie,270,2 h 30 min,32,Pie Oven
+68,Fish pie,226,2 h,27,Pie Oven
+69,Apple juice,129,2 h,15,Juice Press
+70,Vanilla ice cream,172,2 h,20,Ice Cream Maker
+71,Tomato,43,6 h,8,Field
+72,Roasted tomatoes,118,1 h 30 min,14,BBQ Grill
+73,Cherry juice,216,2 h 30 min,26,Juice Press
+74,Fishing net,0,4 h,7,Net Maker
+75,Mystery net,0,3 h,7,Net Maker
+76,Tomato juice,162,1 h 30 min,19,Juice Press
+77,Berry juice,205,3 h,24,Juice Press
+78,Goat feed,14,40 min,3,Feed Mill
+79,Goat milk,64,8 h,6,Goat
+80,Goat cheese,162,1 h 30 min,19,Dairy
+81,Pizza,190,15 min,23,Bakery
+82,Coal,10,Instant,3,Mine
+83,Refined coal,108,6 h,13,Smelter
+84,Cherry popsicle,352,3 h,42,Ice Cream Maker
+85,Strawberry,50,8 h,10,Field
+86,Feta pie,223,1 h 30 min,26,Pie Oven
+87,Iron ore,14,Instant,4,Mine
+88,Iron bar,129,7 h,15,Smelter
+89,Strawberry ice cream,331,4 h,40,Ice Cream Maker
+90,Wheat bundle,50,1 h 30 min,10,Feed Mill
+91,Meat bucket,72,45 min,15,Feed Mill
+92,Potato,36,3 h 40 min,7,Field
+93,Strawberry cake,316,3 h,38,Cake Oven
+94,Baked potato,298,35 min,36,BBQ Grill
+95,Apple jam,219,6 h,26,Jam Maker
+96,Chocolate cake,320,2 h,38,Cake Oven
+97,Casserole,367,2 h,44,Pie Oven
+98,Cacao,86,1 d 10 h,16,Cacao tree
+99,Raspberry jam,252,7 h,30,Jam Maker
+100,Spicy pizza,226,15 min,27,Bakery
+101,Blackberry jam,388,8 h,46,Jam Maker
+102,Potato feta cake,309,2 h,37,Cake Oven
+103,Cherry jam,334,7 h,40,Jam Maker
+104,Bracelet,514,2 h,61,Jeweler
+105,Potato bread,284,45 min,34,Bakery
+106,Shepherds pie,280,1 h 40 min,34,Pie Oven
+107,Chocolate ice cream,342,2 h 30 min,41,Ice Cream Maker
+108,Honeycomb,68,Instant,8,Beehive tree
+109,Necklace,727,3 h,87,Jeweler
+110,Honey,154,20 min,19,Honey Extractor
+111,Honey popcorn,360,1 h 30 min,43,Popcorn Pot
+112,Diamond ring,824,4 h,98,Jeweler
+113,Fish and chips,244,1 h 30 min,29,BBQ Grill
+114,Iron bracelet,658,1 h 30 min,79,Jeweler
+115,Coffee bean,64,1 d 1 h,12,Coffee bush
+116,Espresso,248,5 min,29,Coffee Kiosk
+117,Honey apple cake,482,3 h 20 min,57,Cake Oven
+118,Caffe latte,219,10 min,26,Coffee Kiosk
+119,Chocolate popcorn,248,2 h 30 min,29,Popcorn Pot
+120,Lobster trap,0,2 h,5,Net Maker
+121,Lobster tail,201,6 h,24,Lobster Pool
+122,Frutti di Mare pizza,403,15 min,48,Bakery
+123,Caffe mocha,291,15 min,35,Coffee Kiosk
+124,Raspberry mocha,259,30 min,31,Coffee Kiosk
+125,Lobster soup,612,2 h 30 min,73,Soup Kitchen
+126,Hot chocolate,316,25 min,38,Coffee Kiosk
+127,Tomato soup,478,1 h 30 min,57,Soup Kitchen
+128,Red scarf,288,2 h 30 min,34,Loom
+129,Lobster skewer,417,40 min,50,BBQ Grill
+130,Beeswax,234,45 min,28,Honey Extractor
+131,Strawberry candle,370,2 h,44,Candle Maker
+132,Rustic bouquet,208,45 min,25,Flower Shop
+133,Pumpkin soup,392,2 h,47,Soup Kitchen
+134,Asparagus,43,6 h,8,Field
+135,Asparagus quiche,302,2 h,36,Pie Oven
+136,Strawberry jam,270,7 h 30 min,32,Jam Maker
+137,Duck trap,0,60 min,3,Net Maker
+138,Duck feather,140,3 h,17,Duck Salon
+139,Sesame,18,1 h,4,Field
+140,Sesame ice cream,176,2 h,21,Ice Cream Maker
+141,Caramel apple,255,2 h,31,Candy Machine
+142,Pillow,676,3 h,81,Sewing Machine
+143,Asparagus soup,255,1 h,30,Soup Kitchen
+144,Toffee,176,1 h 30 min,21,Candy Machine
+145,Raspberry candle,360,1 h 45 min,43,Candle Maker
+146,Pineapple,14,30 min,3,Field
+147,Pineapple juice,68,45 min,8,Juice Press
+148,Fish soup,298,3 h,35,Soup Kitchen
+149,Lily,21,1 h 30 min,5,Field
+150,Soy sauce,154,3 h,19,Sauce Maker
+151,Chocolate,460,20 h,55,Candy Machine
+152,Fancy cake,450,15 min,49,Cake Oven
+153,Rice,18,45 min,3,Field
+154,Sushi roll,489,1 h,58,Sushi Bar
+155,Olive,82,1 d,17,Olive tree
+156,Lollipop,342,12 h,41,Candy Machine
+157,Lettuce,32,3 h 30 min,7,Field
+158,Feta salad,745,1 h 30 min,89,Salad Bar
+159,Lobster sushi,637,1 h,76,Sushi Bar
+160,Blanket,1098,3 h 30 min,131,Sewing Machine
+161,Jelly beans,684,24 h,81,Candy Machine
+162,Olive oil,277,45 min,33,Sauce Maker
+163,Garlic,14,30 min,3,Field
+164,Garlic bread,198,15 min,24,BBQ Grill
+165,Veggie bagel,532,40 min,63,Sandwich Bar
+166,Mayonnaise,367,15 min,44,Sauce Maker
+167,BLT salad,723,1 h 45 min,86,Salad Bar
+168,Caramel latte,345,15 min,41,Coffee Kiosk
+169,Peanuts,234,Instant,43,Squirrel House
+170,Sunflower,21,1 h 30 min,5,Field
+171,Egg sushi,550,2 h,66,Sushi Bar
+172,Honey peanuts,468,40 min,64,Candy Machine
+173,Seafood salad,763,2 h,91,Salad Bar
+174,Berry smoothie,547,1 h 15 min,65,Smoothie Mixer
+175,Snack mix,309,45 min,50,Popcorn Pot
+176,Bright bouquet,338,20 min,40,Flower Shop
+177,Bacon toast,648,1 h 40 min,77,Sandwich Bar
+178,Pineapple cake,259,1 h 15 min,31,Cake Oven
+179,Chocolate pie,514,1 h 15 min,70,Pie Oven
+180,Cabbage,18,45 min,3,Field
+181,Cabbage soup,270,1 h 30 min,32,Soup Kitchen
+182,Lemon,93,1 d 5 h,18,Lemon tree
+183,Lemon curd,378,25 min,45,Sauce Maker
+184,Olive dip,468,45 min,56,Sauce Maker
+185,Egg sandwich,583,1 h 20 min,69,Sandwich Bar
+186,Green smoothie,320,45 min,38,Smoothie Mixer
+187,Fresh pasta,43,15 min,5,Pasta Maker
+188,Pasta salad,759,2 h 30 min,90,Salad Bar
+189,Lemon pie,446,2 h 15 min,53,Pie Oven
+190,Grilled asparagus,486,1 h 15 min,58,BBQ Grill
+191,Onion,39,5 h,8,Field
+192,Grilled onion,190,1 h,23,BBQ Grill
+193,Lemon cake,896,2 h 30 min,107,Cake Oven
+194,Peanut butter milkshake,619,1 h 40 min,86,Ice Cream Maker
+195,Tomato sauce,230,30 min,27,Sauce Maker
+196,Honey toast,255,1 h,31,Sandwich Bar
+197,Fried rice,205,1 h,24,Wok Kitchen
+198,Yogurt smoothie,349,1 h,42,Smoothie Mixer
+199,Cloche hat,468,2 h,56,Hat Maker
+200,Cucumber,14,35 min,3,Field
+201,Cucumber smoothie,266,40 min,32,Smoothie Mixer
+202,Orange,97,1 d 7 h,19,Orange tree
+203,Flower shawl,295,1 h 30 min,35,Loom
+204,Orange juice,234,2 h,28,Juice Press
+205,Peanut butter and jelly sandwich,601,25 min,80,Sandwich Bar
+206,Onion soup,327,2 h 30 min,39,Soup Kitchen
+207,Lemon candle,457,2 h 15 min,55,Candle Maker
+208,Top hat,619,3 h 30 min,74,Hat Maker
+209,Gnocchi,475,1 h 20 min,57,Pasta Kitchen
+210,Beetroot,14,40 min,3,Field
+211,Winter veggies,198,25 min,24,BBQ Grill
+212,Rice noodles,100,20 min,12,Pasta Maker
+213,Noodle soup,432,2 h,52,Soup Kitchen
+214,Gracious bouquet,500,40 min,60,Flower Shop
+215,Bell pepper,36,4 h 30 min,7,Field
+216,Marmalade,457,8 h 30 min,54,Jam Maker
+217,Sun hat,558,2 h 30 min,66,Hat Maker
+218,Veggie lasagna,532,1 h 40 min,63,Pasta Kitchen
+219,Veggie platter,266,2 h,32,Salad Bar
+220,Hot dog,370,30 min,44,Hot Dog Stand
+221,Coleslaw,468,1 h 15 min,56,Salad Bar
+222,Cotton Candy,226,30 min,27,Candy Machine
+223,Peach,100,1 d 6 h,20,Peach tree
+224,Peach tart,435,2 h 30 min,52,Pie Oven
+225,Tofu dog,367,45 min,44,Hot Dog Stand
+226,Big sushi roll,648,1 h 30 min,77,Sushi Bar
+227,Beetroot salad,234,45 min,28,Salad Bar
+228,Plain Donut,129,15 min,15,Donut Maker
+229,Salsa,252,20 min,30,Sauce Maker
+230,Taco,396,45 min,47,Taco Kitchen
+231,Colourful omelet,136,1 h,16,Omelet Station
+232,Spring omelet,230,40 min,27,Omelet Station
+233,Summer rolls,316,1 h,38,Salad Bar
+234,Orange sorbet,399,3 h 30 min,48,Ice Cream Maker
+235,Corn dog,529,1 h,63,Hot Dog Stand
+236,Potato soup,255,2 h 30 min,31,Soup Kitchen
+237,Ginger,28,2 h 30 min,6,Field
+238,Sesame brittle,270,1 h,32,Candy Machine
+239,Affogato,435,20 min,56,Ice Cream Maker
+240,Fish taco,392,1 h 30 min,47,Taco Kitchen
+241,Peach jam,464,8 h,55,Jam Maker
+242,Lobster pasta,637,2 h,76,Pasta Kitchen
+243,Cucumber sandwich,464,35 min,55,Sandwich Bar
+244,Spicy fish,543,1 h 30 min,65,Wok Kitchen
+245,Sprinkled Donut,313,20 min,37,Donut Maker
+246,Cheese omelet,464,1 h 30 min,55,Omelet Station
+247,Tea leaf,43,6 h 30 min,9,Field
+248,Green tea,241,30 min,29,Tea Stand
+249,Onion dog,306,1 h 15 min,36,Hot Dog Stand
+250,Stuffed peppers,352,20 min,42,BBQ Grill
+251,Milk tea,190,45 min,23,Tea Stand
+252,Bell pepper soup,439,1 h,52,Soup Kitchen
+253,Chocolate fondue,626,25 min,74,Fondue Pot
+254,Peony,36,4 h,7,Field
+255,Quesadilla,241,1 h,29,Taco Kitchen
+256,Fruit salad,597,2 h,71,Salad Bar
+257,Crunchy Donut,594,30 min,71,Donut Maker
+258,Pasta carbonara,410,2 h 30 min,49,Pasta Kitchen
+259,Peach ice cream,450,3 h,54,Ice Cream Maker
+260,Honey tea,313,40 min,37,Tea Stand
+261,Broccoli,21,1 h 30 min,4,Field
+262,Broccoli pasta,345,1 h,41,Pasta Kitchen
+263,Rice omelet,572,2 h,68,Omelet Station
+264,Summer salad,554,3 h,66,Salad Bar
+265,Grapes,32,3 h,6,Field
+266,Grape juice,104,2 h 30 min,13,Juice Press
+267,Onion melt,417,1 h 30 min,50,Sandwich Bar
+268,Honey soap,327,1 h,39,Bath Kiosk
+269,Lemon lotion,403,1 h 15 min,48,Bath Kiosk
+270,Colorful Candles,324,1 h 50 min,39,Candle Maker
+271,Mint,32,3 h,6,Field
+272,Grape jam,162,6 h 30 min,19,Jam Maker
+273,Mint ice cream,288,2 h 15 min,34,Ice Cream Maker
+274,Flower crown,331,2 h,40,Hat Maker
+275,Lemon tea,241,20 min,29,Tea Stand
+276,Bacon fondue,507,30 min,60,Fondue Pot
+277,Peanut noodles,597,45 min,80,Wok Kitchen
+278,Gingerbread cookie,273,30 min,33,Bakery
+279,Cream Donut,230,25 min,27,Donut Maker
+280,Nachos,432,1 h 15 min,52,Taco Kitchen
+281,Spicy pasta,576,1 h 30 min,69,Pasta Kitchen
+282,Broccoli soup,237,1 h 15 min,28,Soup Kitchen
+283,Bacon fries,302,25 min,36,Deep Fryer
+284,Potato Omelet,270,1 h 15 min,32,Omelet Station
+285,Mixed smoothie,504,30 min,60,Smoothie Mixer
+286,Banana,104,27 h,20,Banana tree
+287,Iced banana latte,277,20 min,33,Coffee Kiosk
+288,Apple ginger tea,169,30 min,20,Tea Stand
+289,Bacon Donut,388,30 min,46,Donut Maker
+290,Passion fruit,18,1 h,4,Field
+291,Passion fruit juice,64,45 min,8,Juice Press
+292,Orange tea,255,40 min,30,Tea Stand
+293,Fruit cake,450,3 h,54,Cake Oven
+294,Mushroom,10,20 min,2,Field
+295,Mushroom salad,216,1 h,26,Salad Bar
+296,Tofu stir fry,306,1 h 15 min,37,Wok Kitchen
+297,Candy bouquet,554,20 min,66,Flower Shop
+298,Eggplant,14,40 min,3,Field
+299,Grilled eggplant,324,40 min,39,BBQ Grill
+300,Banana bread,424,30 min,50,Bakery
+301,Cheese fondue,493,20 min,59,Fondue Pot
+302,Hand pies,295,20 min,35,Deep Fryer
+303,Pickles,270,4 h,32,Preservation Station
+304,Watermelon,39,5 h,8,Field
+305,Iced tea,252,30 min,30,Tea Stand
+306,Goat cheese toast,302,50 min,36,Sandwich Bar
+307,Watermelon juice,108,1 h,13,Juice Press
+308,Birthday Bouquet,349,20 min,42,Flower Shop
+309,Passion fruit pie,111,50 min,13,Pie Oven
+310,Soft bouquet,298,30 min,36,Flower Shop
+311,Black sesame smoothie,313,45 min,37,Smoothie Mixer
+312,Exfoliating soap,363,1 h,43,Bath Kiosk
+313,Filled Donut,403,35 min,48,Donut Maker
+314,Plum,82,1 d,16,Plum tree
+315,Banana pancakes,352,1 h,42,BBQ Grill
+316,Plum jam,385,5 h,46,Jam Maker
+317,Clay,18,1 h 50 min,5,Field
+318,Tea pot,219,3 h 40 min,26,Pottery Studio
+319,Floral candle,442,2 h,53,Candle Maker
+320,Chocolate roll,604,1 h 30 min,72,Cake Oven
+321,Canned fish,471,3 h 40 min,56,Preservation Station
+322,Chickpea,18,1 h,4,Field
+323,Hummus,277,30 min,33,Sauce Maker
+324,Banana split,403,3 h 30 min,48,Ice Cream Maker
+325,Fish skewer,176,30 min,21,BBQ Grill
+326,Passion fruit jam,118,5 h 20 min,14,Jam Maker
+327,Potted plant,151,3 h 40 min,26,Pottery Studio
+328,Mint tea,255,35 min,31,Tea Stand
+329,Mushroom pot pie,162,1 h,19,Pie Oven
+330,Mango,100,1 d 8 h,20,Mango tree
+331,Mango juice,230,50 min,27,Juice Press
+332,Flower pendant,698,1 h,83,Jeweler
+333,Chili poppers,406,40 min,48,Deep Fryer
+334,Falafel,226,55 min,27,Deep Fryer
+335,Kimchi,219,5 h,26,Preservation Station
+336,Eggplant parmesan,442,45 min,53,Pie Oven
+337,Honey face mask,320,1 h 30 min,38,Bath Kiosk
+338,Clay mug,212,3 h 20 min,25,Pottery Studio
+339,Rich fudge,644,2 h,77,Fudge Shop
+340,Cocoa smoothie,511,40 min,61,Smoothie Mixer
+341,Fried candy bar,658,15 min,87,Deep Fryer
+342,Tart dressing,288,30 min,34,Sauce Maker
+343,Tropical fondue,417,35 min,50,Fondue Pot
+344,Mushroom pasta,280,1 h 15 min,33,Pasta Kitchen
+345,Coconut,108,1 d 12 h,21,Coconut tree
+346,Macaroon,421,30 min,50,Bakery
+347,Plum smoothie,522,35 min,62,Smoothie Mixer
+348,Dried fruit,266,3 h,32,Preservation Station
+349,Mint fudge,522,2 h 30 min,62,Fudge Shop
+350,Coconut ice cream,320,15 min,38,Ice Cream Maker
+351,Samosa,223,1 h 15 min,27,Deep Fryer
+352,Plain yogurt,234,2 h,28,Yogurt Maker
+353,Mushroom soup,176,1 h 20 min,21,Soup Kitchen
+354,Chili fudge,540,2 h 50 min,64,Fudge Shop
+355,Tropical smoothie,475,40 min,57,Smoothie Mixer
+356,Guava,111,1 d 10 h,22,Guava Tree
+357,Guava juice,252,55 min,30,Juice Press
+358,Guava compote,421,4 h 20 min,50,Preservation Station
+359,Strawberry yogurt,529,40 min,63,Yogurt Maker
+360,Veggie bouquet,352,15 min,42,Flower Shop
+361,Chickpea stew,284,1 h 30 min,34,Stew Pot
+362,Fruit sorbet,518,1 h,62,Ice Cream Maker
+363,Pomegranate,111,1 d 3 h,22,Pomegranate tree
+364,Pomegranate tea,313,34 min,37,Tea Stand
+365,Lemon fudge,590,1 h 50 min,70,Fudge Shop
+366,Pomegranate cake,316,2 h 40 min,38,Cake Oven
+367,Hummus wrap,374,30 min,45,Sandwich Bar
+368,Tropical yogurt,457,1 h,54,Yogurt Maker
+369,Chili stew,370,2 h,44,Stew Pot
+370,Plain cupcake,280,40 min,34,Cupcake Maker
+371,Guava cupcake,583,1 h 10 min,70,Cupcake Maker
+372,Rice ball,464,45 min,55,Sushi Bar
+373,Peanut fudge,1141,1 h 30 min,136,Fudge Shop
+374,Tropical cupcake,572,1 h 30 min,68,Cupcake Maker
+375,Winter stew,295,2 h 20 min,35,Stew Pot
+376,Cookie cupcake,712,2 h,85,Cupcake Maker
+377,Plain waffles,198,25 min,24,Waffle Maker
+378,Berry waffles,604,35 min,72,Waffle Maker
+379,Orange salad,558,45 min,66,Salad Bar
+380,Chocolate waffles,637,40 min,76,Waffle Maker
+381,Breakfast waffles,424,45 min,51,Waffle Maker
+382,Breakfast Bowl,604,50 min,72,Yogurt Maker
+383,Apple Porridge,522,20 min,62,Porridge Bar
+384,Pineapple Coconut Bars,284,40 min,34,Bakery
+385,Sweet Porridge,466,45 min,55,Porridge Bar
+386,Rich Soap,266,1 h 10 min,32,Bath Kiosk
+387,Fresh Porridge,435,35 min,52,Porridge Bar
+388,Oats,7,7 min,1,Field
+389,Diamond,0,Instant,0,Mine
+390,Chamomile,10,20 min,2,Field
+391,Soothing Pad,324,1 h,39,Sewing Machine
+392,Chamomile Essential Oil,72,10 min,8,Essential Oils Lab 
+393,Chamomile tea,144,20 min,17,Tea Stand
+394,Lemon Essential Oil,288,10 min,34,Essential Oils Lab 
+395,Ginger Essential Oil,162,20 min,19,Essential Oils Lab 
+396,Mint Essential Oil,172,15 min,15,Essential Oils Lab 
+397,Fresh Diffuser,349,17 min,42,Perfumerie
+398,Zesty Perfume,388,15 min,46,Perfumerie
+399,Calming Diffuser,169,25 min,20,Perfumerie
+400,Vanilla Milkshake,673,38 min,80,Milkshake Bar
+401,Mocha Milkshake,856,30 min,102,Milkshake Bar
+402,Fruity Milkshake,759,29 min,90,Milkshake Bar

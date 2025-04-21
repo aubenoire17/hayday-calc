@@ -146,7 +146,9 @@ def append_rare_ingredients(sorted_machine_data: pd.DataFrame,
     else:
         sorted_machine_data['rare_ingredients'] = ''
 
-    sorted_machine_data['rare_ingredients'].fillna('', inplace=True)
+    sorted_machine_data['rare_ingredients'] = (
+        sorted_machine_data['rare_ingredients'].fillna('')
+    )
     
     print(sorted_machine_data[['name', 'machine', 'total_profit', 'profit_per_minute', 
                             'experience_per_minute', 'experience', 'rare_ingredients']].to_string())
