@@ -121,12 +121,12 @@ def append_rare_ingredients(sorted_machine_data: pd.DataFrame,
 
     rare_ingredient_ids = items_df[items_df['name'].isin(rare_ingredients)]['item_id'].tolist()
 
-    filtered_recipes = recipes_df[recipes_df['product_item_id'].isin(sorted_machine_data['item_id'])]
+    filtered_recipes = recipes_df[recipes_df['product'].isin(sorted_machine_data['item_id'])]
 
     rare_recipe_agg = (
-        filtered_recipes[filtered_recipes['ingredient_item_id'].isin(rare_ingredient_ids)]
-        .merge(items_df[['item_id', 'name']], left_on='ingredient_item_id', right_on='item_id', how='left')
-        .groupby('product_item_id')
+        filtered_recipes[filtered_recipes['ingredient'].isin(rare_ingredient_ids)]
+        .merge(items_df[['item_id', 'name']], left_on='ingredient', right_on='item_id', how='left')
+        .groupby('product')
         .apply(
             lambda x: ', '.join(
                 f"{q} {ingredient_name}" 

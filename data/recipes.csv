@@ -1,881 +1,881 @@
-recipe_id,product_item_id,ingredient_item_id,quantity
-1,4,1,3
-2,5,1,2
-3,5,3,1
-4,7,6,2
-5,7,3,1
-6,9,8,1
-7,11,3,2
-8,11,2,2
-9,12,10,1
-10,13,3,2
-11,15,8,2
-12,16,2,3
-13,16,12,1
-14,17,14,2
-15,17,6,1
-16,19,1,2
-17,19,2,2
-18,19,12,1
-19,20,2,4
-20,20,18,2
-21,21,8,3
-22,23,10,2
-23,24,14,3
-24,24,1,2
-25,24,2,1
-26,26,25,3
-27,26,1,2
-28,26,2,1
-29,28,1,3
-30,28,6,1
-31,30,3,2
-32,30,15,1
-33,31,29,2
-34,33,1,2
-35,33,18,3
-36,33,2,1
-37,34,10,4
-38,35,32,3
-39,36,4,2
-40,36,18,2
-41,38,1,2
-42,38,2,1
-43,38,37,2
-44,39,29,1
-45,39,22,1
-46,40,35,2
-47,41,29,2
-48,41,22,2
-49,42,14,2
-50,42,15,1
-51,42,12,1
-52,43,35,1
-53,43,29,3
-54,45,1,5
-55,45,9,1
-56,45,23,1
-57,46,37,1
-58,46,44,2
-59,46,8,1
-60,46,2,1
-61,47,21,1
-62,47,19,1
-63,51,48,3
-64,53,3,2
-65,53,52,2
-66,54,49,3
-67,55,50,3
-68,56,35,2
-69,56,37,1
-70,56,22,1
-71,58,1,1
-72,58,2,2
-73,58,57,2
-74,59,14,3
-75,66,65,2
-76,66,52,1
-77,66,4,2
-78,67,27,3
-79,67,1,2
-80,67,2,1
-81,67,34,1
-82,68,65,3
-83,68,1,2
-84,68,2,1
-85,69,27,2
-86,70,8,1
-87,70,9,1
-88,70,23,1
-89,72,71,2
-90,73,44,2
-91,76,71,3
-92,77,57,1
-93,77,37,1
-94,78,1,1
-95,78,3,1
-96,78,14,2
-97,80,79,2
-98,81,1,2
-99,81,71,1
-100,81,21,1
-101,83,82,3
-102,84,34,1
-103,84,73,1
-104,86,80,1
-105,86,1,2
-106,86,2,1
-107,88,87,3
-108,89,9,1
-109,89,23,1
-110,89,85,3
-111,89,8,1
-112,90,1,75
-113,93,1,3
-114,93,85,2
-115,93,9,1
-116,93,23,1
-117,94,92,2
-118,94,52,1
-119,94,9,1
-120,94,21,1
-121,95,27,3
-122,96,98,2
-123,96,12,1
-124,96,15,1
-125,97,92,2
-126,97,18,2
-127,97,2,2
-128,97,21,1
-129,99,37,3
-130,100,1,2
-131,100,71,1
-132,100,21,1
-133,100,52,1
-134,101,57,3
-135,102,92,1
-136,102,2,4
-137,102,80,1
-138,103,44,3
-139,104,88,2
-140,104,54,1
-141,105,92,2
-142,105,23,1
-143,105,2,3
-144,105,15,1
-145,106,92,2
-146,106,18,2
-147,106,14,2
-148,106,25,2
-149,107,9,1
-150,107,23,1
-151,107,98,2
-152,107,8,1
-153,109,88,2
-154,109,54,1
-155,109,55,1
-156,110,108,2
-157,111,3,2
-158,111,110,2
-159,112,54,2
-160,112,55,2
-161,112,389,1
-162,113,65,2
-163,113,92,3
-164,114,88,1
-165,114,82,2
-166,114,88,2
-167,116,115,3
-168,116,23,1
-169,117,1,2
-170,117,2,2
-171,117,27,2
-172,117,110,2
-173,118,115,2
-174,118,23,1
-175,118,8,1
-176,119,3,2
-177,119,98,2
-178,122,1,2
-179,122,65,1
-180,122,121,1
-181,122,21,1
-182,123,115,1
-183,123,9,1
-184,123,98,2
-185,124,115,1
-186,124,9,1
-187,124,98,1
-188,124,37,1
-189,125,121,2
-190,125,71,1
-191,125,52,2
-192,125,9,1
-193,126,98,2
-194,126,9,1
-195,126,8,1
-196,126,23,1
-197,127,71,2
-198,127,76,1
-199,127,52,1
-200,127,80,1
-201,128,29,2
-202,128,85,2
-203,129,121,1
-204,129,52,1
-205,129,110,1
-206,130,108,3
-207,131,130,1
-208,131,85,2
-209,133,25,3
-210,133,15,1
-211,133,110,1
-212,133,14,2
-213,132,1,5
-214,132,22,3
-215,132,32,3
-216,136,85,3
-217,140,9,1
-218,140,139,3
-219,140,12,1
-220,141,34,2
-221,141,27,1
-222,142,35,2
-223,142,138,3
-224,144,15,1
-225,144,1,1
-226,144,23,1
-227,145,130,1
-228,145,37,2
-229,147,146,3
-230,148,92,3
-231,148,65,2
-232,148,8,1
-233,148,14,1
-234,150,6,9
-235,150,1,1
-236,151,98,3
-237,151,9,1
-238,151,23,1
-239,152,45,1
-240,152,149,3
-241,152,37,3
-242,152,49,1
-243,154,65,1
-244,154,153,15
-245,154,150,1
-246,156,34,1
-247,156,44,1
-248,156,85,2
-249,158,157,3
-250,158,72,1
-251,158,80,2
-252,158,155,2
-253,159,121,1
-254,159,153,15
-255,159,150,1
-256,160,35,3
-257,160,25,1
-258,160,138,5
-259,161,101,1
-260,161,99,1
-261,161,23,1
-262,162,155,3
-263,164,4,2
-264,164,15,1
-265,164,163,4
-266,165,4,2
-267,165,71,2
-268,165,157,3
-269,165,162,1
-270,167,157,3
-271,167,72,1
-272,167,18,2
-273,167,166,1
-274,166,2,4
-275,166,162,1
-276,168,115,2
-277,168,144,1
-278,168,8,1
-279,171,12,1
-280,171,2,4
-281,171,153,15
-282,171,150,1
-283,172,110,1
-284,172,169,1
-285,173,157,3
-286,173,65,1
-287,173,121,1
-288,173,166,1
-289,174,37,3
-290,174,85,3
-291,174,57,3
-292,175,3,2
-293,175,6,1
-294,175,169,1
-295,177,18,2
-296,177,4,2
-297,177,157,3
-298,177,166,1
-299,176,170,5
-300,176,22,3
-301,176,32,1
-302,176,87,5
-303,178,146,3
-304,178,2,2
-305,178,44,2
-306,178,1,4
-307,179,1,3
-308,179,98,2
-309,179,2,1
-310,179,169,1
-311,181,180,3
-312,181,18,2
-313,181,92,2
-314,181,14,2
-315,183,182,2
-316,183,15,1
-317,183,2,2
-318,183,23,1
-319,185,4,2
-320,185,2,2
-321,185,157,3
-322,185,166,1
-323,186,157,5
-324,186,182,1
-325,186,27,1
-326,184,155,3
-327,184,4,2
-328,184,65,1
-329,184,182,1
-330,187,2,1
-331,187,1,2
-332,188,187,4
-333,188,182,2
-334,188,162,1
-335,188,71,2
-336,189,183,1
-337,189,1,2
-338,189,2,1
-339,192,15,1
-340,192,191,2
-341,193,183,2
-342,193,2,2
-343,193,9,1
-344,193,1,3
-345,194,169,1
-346,194,8,1
-347,194,9,1
-348,194,98,3
-349,195,12,1
-350,195,182,1
-351,195,71,2
-352,196,4,1
-353,196,2,1
-354,196,8,1
-355,196,110,1
-356,197,153,5
-357,197,2,5
-358,198,9,1
-359,198,37,2
-360,198,44,1
-361,198,23,1
-362,199,85,2
-363,199,29,6
-364,201,200,3
-365,201,110,1
-366,201,146,3
-367,204,202,2
-368,203,29,2
-369,203,170,3
-370,203,57,1
-371,205,4,2
-372,205,99,1
-373,205,169,1
-374,206,4,2
-375,206,21,1
-376,206,191,3
-377,207,130,1
-378,207,182,2
-379,208,35,3
-380,208,82,1
-381,208,138,1
-382,209,92,4
-383,209,71,3
-384,209,1,2
-385,209,15,2
-386,211,210,2
-387,211,14,2
-388,211,92,2
-389,211,25,2
-390,213,14,2
-391,213,52,1
-392,213,2,2
-393,213,212,3
-394,212,153,5
-395,214,35,1
-396,214,149,5
-397,214,49,1
-398,214,389,1
-399,216,202,3
-400,217,29,3
-401,217,22,1
-402,217,138,2
-403,217,37,1
-404,218,14,1
-405,218,21,1
-406,218,195,1
-407,218,187,3
-408,219,215,2
-409,219,14,2
-410,219,71,2
-411,219,9,1
-412,220,18,2
-413,220,4,1
-414,220,195,1
-415,221,180,3
-416,221,14,2
-417,221,166,1
-418,222,23,3
-419,222,85,1
-420,224,9,1
-421,224,2,2
-422,224,223,3
-423,224,1,2
-424,226,65,1
-425,226,153,20
-426,226,2,3
-427,226,157,5
-428,225,157,3
-429,225,6,6
-430,225,71,4
-431,227,210,3
-432,227,80,1
-433,228,8,1
-434,228,23,1
-435,228,2,1
-436,228,1,3
-437,229,52,2
-438,229,191,2
-439,229,71,2
-440,230,11,1
-441,230,18,1
-442,230,229,1
-443,234,110,1
-444,234,202,2
-445,235,18,4
-446,235,3,4
-447,235,162,1
-448,236,92,3
-449,236,191,2
-450,236,8,1
-451,233,212,2
-452,233,14,2
-453,233,157,1
-454,233,52,1
-455,238,139,3
-456,238,237,1
-457,238,110,1
-458,239,70,1
-459,239,116,1
-460,240,52,2
-461,240,11,2
-462,240,65,1
-463,240,182,1
-464,241,223,3
-465,242,121,1
-466,242,9,2
-467,242,187,3
-468,242,71,4
-469,243,200,2
-470,243,166,1
-471,243,4,2
-472,244,65,1
-473,244,52,3
-474,244,163,5
-475,244,162,1
-476,245,228,1
-477,245,98,2
-478,248,247,5
-479,249,18,2
-480,249,4,1
-481,249,52,1
-482,249,191,3
-483,250,18,3
-484,250,4,1
-485,250,52,1
-486,250,191,3
-487,251,8,1
-488,251,247,3
-489,252,4,1
-490,252,162,1
-491,252,52,1
-492,252,215,2
-493,253,151,1
-494,253,85,3
-495,255,21,1
-496,255,52,2
-497,255,1,4
-498,256,57,2
-499,256,110,1
-500,256,202,1
-501,256,85,3
-502,257,228,1
-503,257,98,1
-504,257,169,1
-505,259,9,1
-506,259,110,1
-507,259,223,2
-508,260,110,1
-509,260,247,3
-510,258,187,3
-511,258,18,2
-512,258,2,1
-513,258,21,1
-514,262,261,3
-515,262,21,1
-516,262,187,3
-517,264,80,1
-518,264,191,3
-519,264,223,1
-520,264,71,3
-521,266,265,2
-522,267,11,2
-523,267,191,3
-524,267,21,1
-525,268,79,1
-526,268,98,2
-527,268,108,1
-528,269,162,1
-529,269,182,1
-530,270,130,1
-531,270,37,1
-532,270,14,1
-533,272,265,3
-534,273,9,1
-535,273,23,1
-536,273,271,2
-537,273,98,1
-538,275,182,1
-539,275,247,3
-540,274,254,5
-541,274,32,4
-542,276,18,3
-543,276,261,1
-544,276,215,1
-545,276,162,1
-546,277,237,1
-547,277,212,1
-548,277,150,1
-549,277,169,1
-550,278,1,5
-551,278,15,1
-552,278,34,1
-553,278,237,2
-554,279,228,1
-555,279,9,1
-556,279,12,1
-557,280,21,1
-558,280,3,4
-559,280,229,1
-560,281,187,3
-561,281,195,1
-562,281,52,3
-563,281,191,2
-564,282,261,3
-565,282,191,1
-566,282,92,3
-567,283,52,1
-568,283,18,2
-569,283,92,4
-570,283,163,1
-571,285,182,1
-572,285,202,2
-573,285,223,2
-574,287,286,1
-575,287,115,2
-576,287,8,1
-577,288,237,1
-578,288,27,2
-579,288,247,1
-580,289,228,1
-581,289,18,3
-582,289,34,1
-583,291,290,2
-584,292,202,1
-585,292,247,3
-586,293,265,2
-587,293,202,2
-588,293,44,2
-589,293,1,3
-590,295,294,3
-591,295,157,1
-592,295,92,2
-593,295,18,1
-594,296,6,3
-595,296,191,3
-596,296,261,3
-597,296,139,3
-598,297,254,3
-599,297,141,1
-600,297,144,1
-601,299,298,3
-602,299,229,1
-603,300,286,3
-604,300,265,2
-605,300,1,3
-606,300,2,1
-607,301,105,1
-608,301,21,1
-609,301,294,2
-610,301,71,1
-611,302,95,1
-612,302,2,2
-613,302,1,5
-614,303,200,3
-615,303,191,2
-616,303,182,1
-617,305,223,1
-618,305,247,3
-619,306,265,3
-620,306,80,1
-621,306,4,1
-622,307,304,2
-623,308,73,1
-624,308,254,3
-625,308,149,1
-626,308,22,1
-627,309,290,3
-628,309,1,2
-629,309,2,1
-630,310,254,4
-631,310,32,1
-632,310,35,1
-633,311,139,3
-634,311,286,1
-635,311,79,2
-636,312,98,2
-637,312,115,2
-638,312,37,1
-639,313,228,1
-640,313,99,1
-641,315,286,1
-642,315,57,2
-643,315,1,3
-644,315,9,1
-645,316,314,3
-646,318,317,3
-647,318,115,1
-648,318,49,1
-649,319,130,1
-650,319,254,2
-651,319,170,2
-652,319,22,2
-653,320,98,5
-654,320,9,1
-655,320,1,3
-656,320,271,3
-657,321,65,2
-658,321,52,1
-659,321,162,1
-660,323,322,3
-661,323,182,2
-662,323,163,1
-663,324,286,1
-664,324,9,1
-665,324,44,3
-666,325,65,1
-667,325,294,3
-668,325,237,1
-669,325,139,2
-670,326,290,3
-671,327,317,3
-672,327,170,1
-673,328,247,3
-674,328,304,1
-675,328,271,1
-676,329,294,3
-677,329,180,3
-678,329,1,3
-679,329,2,2
-680,331,330,2
-681,332,254,3
-682,332,55,1
-683,332,54,2
-684,333,52,3
-685,333,1,1
-686,333,18,3
-687,333,21,1
-688,335,180,5
-689,335,237,1
-690,335,52,1
-691,335,163,1
-692,334,322,3
-693,334,191,2
-694,334,163,2
-695,334,52,1
-696,336,298,4
-697,336,21,1
-698,336,195,1
-699,337,2,2
-700,337,110,1
-701,337,182,1
-702,338,317,3
-703,338,22,2
-704,338,254,1
-705,339,15,3
-706,339,98,3
-707,339,23,2
-708,340,286,2
-709,340,98,3
-710,340,8,1
-711,341,98,3
-712,341,19,1
-713,341,169,1
-714,342,290,2
-715,342,52,2
-716,342,110,1
-717,343,23,1
-718,343,9,2
-719,343,146,3
-720,343,330,2
-721,344,294,5
-722,344,187,3
-723,344,79,1
-724,346,98,1
-725,346,345,2
-726,346,23,2
-727,347,314,3
-728,347,265,2
-729,347,271,1
-730,347,110,1
-731,348,265,1
-732,348,37,1
-733,348,85,1
-734,348,202,1
-735,349,15,2
-736,349,98,2
-737,349,23,1
-738,349,271,3
-739,350,345,2
-740,350,34,1
-741,351,322,2
-742,351,1,4
-743,351,92,3
-744,351,52,1
-745,352,8,2
-746,352,9,3
-747,353,294,3
-748,353,8,1
-749,353,191,2
-750,354,15,2
-751,354,98,2
-752,354,23,1
-753,354,52,3
-754,355,345,1
-755,355,286,1
-756,355,290,2
-757,355,330,2
-758,357,356,2
-759,358,356,2
-760,358,182,1
-761,358,23,1
-762,359,352,1
-763,359,136,1
-764,360,261,3
-765,360,71,3
-766,360,294,3
-767,360,35,1
-768,361,345,1
-769,361,71,2
-770,361,322,3
-771,362,356,1
-772,362,290,1
-773,362,330,2
-774,362,23,3
-775,365,15,2
-776,365,23,2
-777,365,8,3
-778,365,182,2
-779,367,323,1
-780,367,4,1
-781,367,157,1
-782,368,352,1
-783,368,37,4
-784,368,290,1
-785,368,330,2
-786,369,52,3
-787,369,18,2
-788,369,191,2
-789,369,9,1
-790,370,8,2
-791,370,23,3
-792,370,2,1
-793,370,1,5
-794,371,370,1
-795,371,356,2
-796,371,9,1
-797,372,153,20
-798,372,139,1
-799,372,314,1
-800,373,15,2
-801,373,98,2
-802,373,23,1
-803,373,169,2
-804,375,18,1
-805,375,92,3
-806,375,191,2
-807,375,294,2
-808,374,370,1
-809,374,146,3
-810,374,345,2
-811,376,370,1
-812,376,9,2
-813,376,19,2
-814,376,98,1
-815,364,247,4
-816,364,363,1
-817,382,352,1
-818,382,388,4
-819,382,110,1
-820,382,57,2
-821,383,27,1
-822,383,95,2
-823,383,388,4
-824,384,345,1
-825,384,23,2
-826,384,388,3
-827,384,146,2
-828,385,223,1
-829,385,110,2
-830,385,388,3
-831,386,388,2
-832,386,345,1
-833,386,363,1
-834,387,363,1
-835,387,271,2
-836,387,345,2
-837,387,388,3
-838,377,23,2
-839,377,2,3
-840,377,1,5
-841,378,377,1
-842,378,34,1
-843,378,37,3
-844,378,57,2
-845,380,377,1
-846,380,98,2
-847,380,85,3
-848,380,286,1
-849,381,377,1
-850,381,18,2
-851,381,2,1
-852,381,134,2
-853,379,21,1
-854,379,157,3
-855,379,363,1
-856,379,202,2
-857,391,35,2
-858,391,1,5
-859,391,390,5
-860,392,390,5
-861,393,390,5
-862,393,108,1
-863,394,182,3
-864,395,237,5
-865,396,271,5
-866,397,395,1
-867,397,172,1
-868,398,394,1
-869,398,237,3
-870,399,392,1
-871,399,22,3
-872,400,70,1
-873,400,19,2
-874,400,144,1
-875,400,34,1
-876,401,107,1
-877,401,116,2
-878,402,259,1
-879,402,202,2
-880,402,182,1
+recipe_id,product,ingredient,quantity
+1,Bread,Wheat,3
+2,Chicken feed,Wheat,2
+3,Chicken feed,Corn,1
+4,Cow feed,Soybean,2
+5,Cow feed,Corn,1
+6,Cream,Milk,1
+7,Corn bread,Corn,2
+8,Corn bread,Egg,2
+9,Brown sugar,Sugarcane,1
+10,Popcorn,Corn,2
+11,Butter,Milk,2
+12,Pancake,Egg,3
+13,Pancake,Brown sugar,1
+14,Pig feed,Carrot,2
+15,Pig feed,Soybean,1
+16,Cookie,Wheat,2
+17,Cookie,Egg,2
+18,Cookie,Brown sugar,1
+19,Bacon and eggs,Egg,4
+20,Bacon and eggs,Bacon,2
+21,Cheese,Milk,3
+22,White sugar,Sugarcane,2
+23,Carrot pie,Carrot,3
+24,Carrot pie,Wheat,2
+25,Carrot pie,Egg,1
+26,Pumpkin pie,Pumpkin,3
+27,Pumpkin pie,Wheat,2
+28,Pumpkin pie,Egg,1
+29,Sheep feed,Wheat,3
+30,Sheep feed,Soybean,1
+31,Buttered popcorn,Corn,2
+32,Buttered popcorn,Butter,1
+33,Sweater,Wool,2
+34,Bacon pie,Wheat,2
+35,Bacon pie,Bacon,3
+36,Bacon pie,Egg,1
+37,Syrup,Sugarcane,4
+38,Cotton fabric,Cotton,3
+39,Hamburger,Bread,2
+40,Hamburger,Bacon,2
+41,Raspberry muffin,Wheat,2
+42,Raspberry muffin,Egg,1
+43,Raspberry muffin,Raspberry,2
+44,Blue woolly hat,Wool,1
+45,Blue woolly hat,Indigo,1
+46,Cotton shirt,Cotton fabric,2
+47,Blue sweater,Wool,2
+48,Blue sweater,Indigo,2
+49,Carrot cake,Carrot,2
+50,Carrot cake,Butter,1
+51,Carrot cake,Brown sugar,1
+52,Wooly chaps,Cotton fabric,1
+53,Wooly chaps,Wool,3
+54,Cream cake,Wheat,5
+55,Cream cake,Cream,1
+56,Cream cake,White sugar,1
+57,Red berry cake,Raspberry,1
+58,Red berry cake,Cherry,2
+59,Red berry cake,Milk,1
+60,Red berry cake,Egg,1
+61,Cheesecake,Cheese,1
+62,Cheesecake,Cookie,1
+63,Silver bar,Silver ore,3
+64,Chili popcorn,Corn,2
+65,Chili popcorn,Chili Pepper,2
+66,Gold bar,Gold ore,3
+67,Platinum bar,Platinum ore,3
+68,Violet dress,Cotton fabric,2
+69,Violet dress,Raspberry,1
+70,Violet dress,Indigo,1
+71,Blackberry muffin,Wheat,1
+72,Blackberry muffin,Egg,2
+73,Blackberry muffin,Blackberry,2
+74,Carrot juice,Carrot,3
+75,Fish burger,Fish fillet,2
+76,Fish burger,Chili Pepper,1
+77,Fish burger,Bread,2
+78,Apple pie,Apple,3
+79,Apple pie,Wheat,2
+80,Apple pie,Egg,1
+81,Apple pie,Syrup,1
+82,Fish pie,Fish fillet,3
+83,Fish pie,Wheat,2
+84,Fish pie,Egg,1
+85,Apple juice,Apple,2
+86,Vanilla ice cream,Milk,1
+87,Vanilla ice cream,Cream,1
+88,Vanilla ice cream,White sugar,1
+89,Roasted tomatoes,Tomato,2
+90,Cherry juice,Cherry,2
+91,Tomato juice,Tomato,3
+92,Berry juice,Blackberry,1
+93,Berry juice,Raspberry,1
+94,Goat feed,Wheat,1
+95,Goat feed,Corn,1
+96,Goat feed,Carrot,2
+97,Goat cheese,Goat milk,2
+98,Pizza,Wheat,2
+99,Pizza,Tomato,1
+100,Pizza,Cheese,1
+101,Refined coal,Coal,3
+102,Cherry popsicle,Syrup,1
+103,Cherry popsicle,Cherry juice,1
+104,Feta pie,Goat cheese,1
+105,Feta pie,Wheat,2
+106,Feta pie,Egg,1
+107,Iron bar,Iron ore,3
+108,Strawberry ice cream,Cream,1
+109,Strawberry ice cream,White sugar,1
+110,Strawberry ice cream,Strawberry,3
+111,Strawberry ice cream,Milk,1
+112,Wheat bundle,Wheat,75
+113,Strawberry cake,Wheat,3
+114,Strawberry cake,Strawberry,2
+115,Strawberry cake,Cream,1
+116,Strawberry cake,White sugar,1
+117,Baked potato,Potato,2
+118,Baked potato,Chili Pepper,1
+119,Baked potato,Cream,1
+120,Baked potato,Cheese,1
+121,Apple jam,Apple,3
+122,Chocolate cake,Cacao,2
+123,Chocolate cake,Brown sugar,1
+124,Chocolate cake,Butter,1
+125,Casserole,Potato,2
+126,Casserole,Bacon,2
+127,Casserole,Egg,2
+128,Casserole,Cheese,1
+129,Raspberry jam,Raspberry,3
+130,Spicy pizza,Wheat,2
+131,Spicy pizza,Tomato,1
+132,Spicy pizza,Cheese,1
+133,Spicy pizza,Chili Pepper,1
+134,Blackberry jam,Blackberry,3
+135,Potato feta cake,Potato,1
+136,Potato feta cake,Egg,4
+137,Potato feta cake,Goat cheese,1
+138,Cherry jam,Cherry,3
+139,Bracelet,Iron bar,2
+140,Bracelet,Gold bar,1
+141,Potato bread,Potato,2
+142,Potato bread,White sugar,1
+143,Potato bread,Egg,3
+144,Potato bread,Butter,1
+145,Shepherds pie,Potato,2
+146,Shepherds pie,Bacon,2
+147,Shepherds pie,Carrot,2
+148,Shepherds pie,Pumpkin,2
+149,Chocolate ice cream,Cream,1
+150,Chocolate ice cream,White sugar,1
+151,Chocolate ice cream,Cacao,2
+152,Chocolate ice cream,Milk,1
+153,Necklace,Iron bar,2
+154,Necklace,Gold bar,1
+155,Necklace,Platinum bar,1
+156,Honey,Honeycomb,2
+157,Honey popcorn,Corn,2
+158,Honey popcorn,Honey,2
+159,Diamond ring,Gold bar,2
+160,Diamond ring,Platinum bar,2
+161,Diamond ring,Diamond,1
+162,Fish and chips,Fish fillet,2
+163,Fish and chips,Potato,3
+164,Iron bracelet,Iron bar,1
+165,Iron bracelet,Coal,2
+166,Iron bracelet,Iron bar,2
+167,Espresso,Coffee bean,3
+168,Espresso,White sugar,1
+169,Honey apple cake,Wheat,2
+170,Honey apple cake,Egg,2
+171,Honey apple cake,Apple,2
+172,Honey apple cake,Honey,2
+173,Caffe latte,Coffee bean,2
+174,Caffe latte,White sugar,1
+175,Caffe latte,Milk,1
+176,Chocolate popcorn,Corn,2
+177,Chocolate popcorn,Cacao,2
+178,Frutti di Mare pizza,Wheat,2
+179,Frutti di Mare pizza,Fish fillet,1
+180,Frutti di Mare pizza,Lobster tail,1
+181,Frutti di Mare pizza,Cheese,1
+182,Caffe mocha,Coffee bean,1
+183,Caffe mocha,Cream,1
+184,Caffe mocha,Cacao,2
+185,Raspberry mocha,Coffee bean,1
+186,Raspberry mocha,Cream,1
+187,Raspberry mocha,Cacao,1
+188,Raspberry mocha,Raspberry,1
+189,Lobster soup,Lobster tail,2
+190,Lobster soup,Tomato,1
+191,Lobster soup,Chili Pepper,2
+192,Lobster soup,Cream,1
+193,Hot chocolate,Cacao,2
+194,Hot chocolate,Cream,1
+195,Hot chocolate,Milk,1
+196,Hot chocolate,White sugar,1
+197,Tomato soup,Tomato,2
+198,Tomato soup,Tomato juice,1
+199,Tomato soup,Chili Pepper,1
+200,Tomato soup,Goat cheese,1
+201,Red scarf,Wool,2
+202,Red scarf,Strawberry,2
+203,Lobster skewer,Lobster tail,1
+204,Lobster skewer,Chili Pepper,1
+205,Lobster skewer,Honey,1
+206,Beeswax,Honeycomb,3
+207,Strawberry candle,Beeswax,1
+208,Strawberry candle,Strawberry,2
+209,Pumpkin soup,Pumpkin,3
+210,Pumpkin soup,Butter,1
+211,Pumpkin soup,Honey,1
+212,Pumpkin soup,Carrot,2
+213,Rustic bouquet,Wheat,5
+214,Rustic bouquet,Indigo,3
+215,Rustic bouquet,Cotton,3
+216,Strawberry jam,Strawberry,3
+217,Sesame ice cream,Cream,1
+218,Sesame ice cream,Sesame,3
+219,Sesame ice cream,Brown sugar,1
+220,Caramel apple,Syrup,2
+221,Caramel apple,Apple,1
+222,Pillow,Cotton fabric,2
+223,Pillow,Duck feather,3
+224,Toffee,Butter,1
+225,Toffee,Wheat,1
+226,Toffee,White sugar,1
+227,Raspberry candle,Beeswax,1
+228,Raspberry candle,Raspberry,2
+229,Pineapple juice,Pineapple,3
+230,Fish soup,Potato,3
+231,Fish soup,Fish fillet,2
+232,Fish soup,Milk,1
+233,Fish soup,Carrot,1
+234,Soy sauce,Soybean,9
+235,Soy sauce,Wheat,1
+236,Chocolate,Cacao,3
+237,Chocolate,Cream,1
+238,Chocolate,White sugar,1
+239,Fancy cake,Cream cake,1
+240,Fancy cake,Lily,3
+241,Fancy cake,Raspberry,3
+242,Fancy cake,Gold ore,1
+243,Sushi roll,Fish fillet,1
+244,Sushi roll,Rice,15
+245,Sushi roll,Soy sauce,1
+246,Lollipop,Syrup,1
+247,Lollipop,Cherry,1
+248,Lollipop,Strawberry,2
+249,Feta salad,Lettuce,3
+250,Feta salad,Roasted tomatoes,1
+251,Feta salad,Goat cheese,2
+252,Feta salad,Olive,2
+253,Lobster sushi,Lobster tail,1
+254,Lobster sushi,Rice,15
+255,Lobster sushi,Soy sauce,1
+256,Blanket,Cotton fabric,3
+257,Blanket,Pumpkin,1
+258,Blanket,Duck feather,5
+259,Jelly beans,Blackberry jam,1
+260,Jelly beans,Raspberry jam,1
+261,Jelly beans,White sugar,1
+262,Olive oil,Olive,3
+263,Garlic bread,Bread,2
+264,Garlic bread,Butter,1
+265,Garlic bread,Garlic,4
+266,Veggie bagel,Bread,2
+267,Veggie bagel,Tomato,2
+268,Veggie bagel,Lettuce,3
+269,Veggie bagel,Olive oil,1
+270,BLT salad,Lettuce,3
+271,BLT salad,Roasted tomatoes,1
+272,BLT salad,Bacon,2
+273,BLT salad,Mayonnaise,1
+274,Mayonnaise,Egg,4
+275,Mayonnaise,Olive oil,1
+276,Caramel latte,Coffee bean,2
+277,Caramel latte,Toffee,1
+278,Caramel latte,Milk,1
+279,Egg sushi,Brown sugar,1
+280,Egg sushi,Egg,4
+281,Egg sushi,Rice,15
+282,Egg sushi,Soy sauce,1
+283,Honey peanuts,Honey,1
+284,Honey peanuts,Peanuts,1
+285,Seafood salad,Lettuce,3
+286,Seafood salad,Fish fillet,1
+287,Seafood salad,Lobster tail,1
+288,Seafood salad,Mayonnaise,1
+289,Berry smoothie,Raspberry,3
+290,Berry smoothie,Strawberry,3
+291,Berry smoothie,Blackberry,3
+292,Snack mix,Corn,2
+293,Snack mix,Soybean,1
+294,Snack mix,Peanuts,1
+295,Bacon toast,Bacon,2
+296,Bacon toast,Bread,2
+297,Bacon toast,Lettuce,3
+298,Bacon toast,Mayonnaise,1
+299,Bright bouquet,Sunflower,5
+300,Bright bouquet,Indigo,3
+301,Bright bouquet,Cotton,1
+302,Bright bouquet,Iron ore,5
+303,Pineapple cake,Pineapple,3
+304,Pineapple cake,Egg,2
+305,Pineapple cake,Cherry,2
+306,Pineapple cake,Wheat,4
+307,Chocolate pie,Wheat,3
+308,Chocolate pie,Cacao,2
+309,Chocolate pie,Egg,1
+310,Chocolate pie,Peanuts,1
+311,Cabbage soup,Cabbage,3
+312,Cabbage soup,Bacon,2
+313,Cabbage soup,Potato,2
+314,Cabbage soup,Carrot,2
+315,Lemon curd,Lemon,2
+316,Lemon curd,Butter,1
+317,Lemon curd,Egg,2
+318,Lemon curd,White sugar,1
+319,Egg sandwich,Bread,2
+320,Egg sandwich,Egg,2
+321,Egg sandwich,Lettuce,3
+322,Egg sandwich,Mayonnaise,1
+323,Green smoothie,Lettuce,5
+324,Green smoothie,Lemon,1
+325,Green smoothie,Apple,1
+326,Olive dip,Olive,3
+327,Olive dip,Bread,2
+328,Olive dip,Fish fillet,1
+329,Olive dip,Lemon,1
+330,Fresh pasta,Egg,1
+331,Fresh pasta,Wheat,2
+332,Pasta salad,Fresh pasta,4
+333,Pasta salad,Lemon,2
+334,Pasta salad,Olive oil,1
+335,Pasta salad,Tomato,2
+336,Lemon pie,Lemon curd,1
+337,Lemon pie,Wheat,2
+338,Lemon pie,Egg,1
+339,Grilled onion,Butter,1
+340,Grilled onion,Onion,2
+341,Lemon cake,Lemon curd,2
+342,Lemon cake,Egg,2
+343,Lemon cake,Cream,1
+344,Lemon cake,Wheat,3
+345,Peanut butter milkshake,Peanuts,1
+346,Peanut butter milkshake,Milk,1
+347,Peanut butter milkshake,Cream,1
+348,Peanut butter milkshake,Cacao,3
+349,Tomato sauce,Brown sugar,1
+350,Tomato sauce,Lemon,1
+351,Tomato sauce,Tomato,2
+352,Honey toast,Bread,1
+353,Honey toast,Egg,1
+354,Honey toast,Milk,1
+355,Honey toast,Honey,1
+356,Fried rice,Rice,5
+357,Fried rice,Egg,5
+358,Yogurt smoothie,Cream,1
+359,Yogurt smoothie,Raspberry,2
+360,Yogurt smoothie,Cherry,1
+361,Yogurt smoothie,White sugar,1
+362,Cloche hat,Strawberry,2
+363,Cloche hat,Wool,6
+364,Cucumber smoothie,Cucumber,3
+365,Cucumber smoothie,Honey,1
+366,Cucumber smoothie,Pineapple,3
+367,Orange juice,Orange,2
+368,Flower shawl,Wool,2
+369,Flower shawl,Sunflower,3
+370,Flower shawl,Blackberry,1
+371,Peanut butter and jelly sandwich,Bread,2
+372,Peanut butter and jelly sandwich,Raspberry jam,1
+373,Peanut butter and jelly sandwich,Peanuts,1
+374,Onion soup,Bread,2
+375,Onion soup,Cheese,1
+376,Onion soup,Onion,3
+377,Lemon candle,Beeswax,1
+378,Lemon candle,Lemon,2
+379,Top hat,Cotton fabric,3
+380,Top hat,Coal,1
+381,Top hat,Duck feather,1
+382,Gnocchi,Potato,4
+383,Gnocchi,Tomato,3
+384,Gnocchi,Wheat,2
+385,Gnocchi,Butter,2
+386,Winter veggies,Beetroot,2
+387,Winter veggies,Carrot,2
+388,Winter veggies,Potato,2
+389,Winter veggies,Pumpkin,2
+390,Noodle soup,Carrot,2
+391,Noodle soup,Chili Pepper,1
+392,Noodle soup,Egg,2
+393,Noodle soup,Rice noodles,3
+394,Rice noodles,Rice,5
+395,Gracious bouquet,Cotton fabric,1
+396,Gracious bouquet,Lily,5
+397,Gracious bouquet,Gold ore,1
+398,Gracious bouquet,Diamond,1
+399,Marmalade,Orange,3
+400,Sun hat,Wool,3
+401,Sun hat,Indigo,1
+402,Sun hat,Duck feather,2
+403,Sun hat,Raspberry,1
+404,Veggie lasagna,Carrot,1
+405,Veggie lasagna,Cheese,1
+406,Veggie lasagna,Tomato sauce,1
+407,Veggie lasagna,Fresh pasta,3
+408,Veggie platter,Bell pepper,2
+409,Veggie platter,Carrot,2
+410,Veggie platter,Tomato,2
+411,Veggie platter,Cream,1
+412,Hot dog,Bacon,2
+413,Hot dog,Bread,1
+414,Hot dog,Tomato sauce,1
+415,Coleslaw,Cabbage,3
+416,Coleslaw,Carrot,2
+417,Coleslaw,Mayonnaise,1
+418,Cotton Candy,White sugar,3
+419,Cotton Candy,Strawberry,1
+420,Peach tart,Cream,1
+421,Peach tart,Egg,2
+422,Peach tart,Peach,3
+423,Peach tart,Wheat,2
+424,Big sushi roll,Fish fillet,1
+425,Big sushi roll,Rice,20
+426,Big sushi roll,Egg,3
+427,Big sushi roll,Lettuce,5
+428,Tofu dog,Lettuce,3
+429,Tofu dog,Soybean,6
+430,Tofu dog,Tomato,4
+431,Beetroot salad,Beetroot,3
+432,Beetroot salad,Goat cheese,1
+433,Plain Donut,Milk,1
+434,Plain Donut,White sugar,1
+435,Plain Donut,Egg,1
+436,Plain Donut,Wheat,3
+437,Salsa,Chili Pepper,2
+438,Salsa,Onion,2
+439,Salsa,Tomato,2
+440,Taco,Corn bread,1
+441,Taco,Bacon,1
+442,Taco,Salsa,1
+443,Orange sorbet,Honey,1
+444,Orange sorbet,Orange,2
+445,Corn dog,Bacon,4
+446,Corn dog,Corn,4
+447,Corn dog,Olive oil,1
+448,Potato soup,Potato,3
+449,Potato soup,Onion,2
+450,Potato soup,Milk,1
+451,Summer rolls,Rice noodles,2
+452,Summer rolls,Carrot,2
+453,Summer rolls,Lettuce,1
+454,Summer rolls,Chili Pepper,1
+455,Sesame brittle,Sesame,3
+456,Sesame brittle,Ginger,1
+457,Sesame brittle,Honey,1
+458,Affogato,Vanilla ice cream,1
+459,Affogato,Espresso,1
+460,Fish taco,Chili Pepper,2
+461,Fish taco,Corn bread,2
+462,Fish taco,Fish fillet,1
+463,Fish taco,Lemon,1
+464,Peach jam,Peach,3
+465,Lobster pasta,Lobster tail,1
+466,Lobster pasta,Cream,2
+467,Lobster pasta,Fresh pasta,3
+468,Lobster pasta,Tomato,4
+469,Cucumber sandwich,Cucumber,2
+470,Cucumber sandwich,Mayonnaise,1
+471,Cucumber sandwich,Bread,2
+472,Spicy fish,Fish fillet,1
+473,Spicy fish,Chili Pepper,3
+474,Spicy fish,Garlic,5
+475,Spicy fish,Olive oil,1
+476,Sprinkled Donut,Plain Donut,1
+477,Sprinkled Donut,Cacao,2
+478,Green tea,Tea leaf,5
+479,Onion dog,Bacon,2
+480,Onion dog,Bread,1
+481,Onion dog,Chili Pepper,1
+482,Onion dog,Onion,3
+483,Stuffed peppers,Bacon,3
+484,Stuffed peppers,Bread,1
+485,Stuffed peppers,Chili Pepper,1
+486,Stuffed peppers,Onion,3
+487,Milk tea,Milk,1
+488,Milk tea,Tea leaf,3
+489,Bell pepper soup,Bread,1
+490,Bell pepper soup,Olive oil,1
+491,Bell pepper soup,Chili Pepper,1
+492,Bell pepper soup,Bell pepper,2
+493,Chocolate fondue,Chocolate,1
+494,Chocolate fondue,Strawberry,3
+495,Quesadilla,Cheese,1
+496,Quesadilla,Chili Pepper,2
+497,Quesadilla,Wheat,4
+498,Fruit salad,Blackberry,2
+499,Fruit salad,Honey,1
+500,Fruit salad,Orange,1
+501,Fruit salad,Strawberry,3
+502,Crunchy Donut,Plain Donut,1
+503,Crunchy Donut,Cacao,1
+504,Crunchy Donut,Peanuts,1
+505,Peach ice cream,Cream,1
+506,Peach ice cream,Honey,1
+507,Peach ice cream,Peach,2
+508,Honey tea,Honey,1
+509,Honey tea,Tea leaf,3
+510,Pasta carbonara,Fresh pasta,3
+511,Pasta carbonara,Bacon,2
+512,Pasta carbonara,Egg,1
+513,Pasta carbonara,Cheese,1
+514,Broccoli pasta,Broccoli,3
+515,Broccoli pasta,Cheese,1
+516,Broccoli pasta,Fresh pasta,3
+517,Summer salad,Goat cheese,1
+518,Summer salad,Onion,3
+519,Summer salad,Peach,1
+520,Summer salad,Tomato,3
+521,Grape juice,Grapes,2
+522,Onion melt,Corn bread,2
+523,Onion melt,Onion,3
+524,Onion melt,Cheese,1
+525,Honey soap,Goat milk,1
+526,Honey soap,Cacao,2
+527,Honey soap,Honeycomb,1
+528,Lemon lotion,Olive oil,1
+529,Lemon lotion,Lemon,1
+530,Colorful Candles,Beeswax,1
+531,Colorful Candles,Raspberry,1
+532,Colorful Candles,Carrot,1
+533,Grape jam,Grapes,3
+534,Mint ice cream,Cream,1
+535,Mint ice cream,White sugar,1
+536,Mint ice cream,Mint,2
+537,Mint ice cream,Cacao,1
+538,Lemon tea,Lemon,1
+539,Lemon tea,Tea leaf,3
+540,Flower crown,Peony,5
+541,Flower crown,Cotton,4
+542,Bacon fondue,Bacon,3
+543,Bacon fondue,Broccoli,1
+544,Bacon fondue,Bell pepper,1
+545,Bacon fondue,Olive oil,1
+546,Peanut noodles,Ginger,1
+547,Peanut noodles,Rice noodles,1
+548,Peanut noodles,Soy sauce,1
+549,Peanut noodles,Peanuts,1
+550,Gingerbread cookie,Wheat,5
+551,Gingerbread cookie,Butter,1
+552,Gingerbread cookie,Syrup,1
+553,Gingerbread cookie,Ginger,2
+554,Cream Donut,Plain Donut,1
+555,Cream Donut,Cream,1
+556,Cream Donut,Brown sugar,1
+557,Nachos,Cheese,1
+558,Nachos,Corn,4
+559,Nachos,Salsa,1
+560,Spicy pasta,Fresh pasta,3
+561,Spicy pasta,Tomato sauce,1
+562,Spicy pasta,Chili Pepper,3
+563,Spicy pasta,Onion,2
+564,Broccoli soup,Broccoli,3
+565,Broccoli soup,Onion,1
+566,Broccoli soup,Potato,3
+567,Bacon fries,Chili Pepper,1
+568,Bacon fries,Bacon,2
+569,Bacon fries,Potato,4
+570,Bacon fries,Garlic,1
+571,Mixed smoothie,Lemon,1
+572,Mixed smoothie,Orange,2
+573,Mixed smoothie,Peach,2
+574,Iced banana latte,Banana,1
+575,Iced banana latte,Coffee bean,2
+576,Iced banana latte,Milk,1
+577,Apple ginger tea,Ginger,1
+578,Apple ginger tea,Apple,2
+579,Apple ginger tea,Tea leaf,1
+580,Bacon Donut,Plain Donut,1
+581,Bacon Donut,Bacon,3
+582,Bacon Donut,Syrup,1
+583,Passion fruit juice,Passion fruit,2
+584,Orange tea,Orange,1
+585,Orange tea,Tea leaf,3
+586,Fruit cake,Grapes,2
+587,Fruit cake,Orange,2
+588,Fruit cake,Cherry,2
+589,Fruit cake,Wheat,3
+590,Mushroom salad,Mushroom,3
+591,Mushroom salad,Lettuce,1
+592,Mushroom salad,Potato,2
+593,Mushroom salad,Bacon,1
+594,Tofu stir fry,Soybean,3
+595,Tofu stir fry,Onion,3
+596,Tofu stir fry,Broccoli,3
+597,Tofu stir fry,Sesame,3
+598,Candy bouquet,Peony,3
+599,Candy bouquet,Caramel apple,1
+600,Candy bouquet,Toffee,1
+601,Grilled eggplant,Eggplant,3
+602,Grilled eggplant,Salsa,1
+603,Banana bread,Banana,3
+604,Banana bread,Grapes,2
+605,Banana bread,Wheat,3
+606,Banana bread,Egg,1
+607,Cheese fondue,Potato bread,1
+608,Cheese fondue,Cheese,1
+609,Cheese fondue,Mushroom,2
+610,Cheese fondue,Tomato,1
+611,Hand pies,Apple jam,1
+612,Hand pies,Egg,2
+613,Hand pies,Wheat,5
+614,Pickles,Cucumber,3
+615,Pickles,Onion,2
+616,Pickles,Lemon,1
+617,Iced tea,Peach,1
+618,Iced tea,Tea leaf,3
+619,Goat cheese toast,Grapes,3
+620,Goat cheese toast,Goat cheese,1
+621,Goat cheese toast,Bread,1
+622,Watermelon juice,Watermelon,2
+623,Birthday Bouquet,Cherry juice,1
+624,Birthday Bouquet,Peony,3
+625,Birthday Bouquet,Lily,1
+626,Birthday Bouquet,Indigo,1
+627,Passion fruit pie,Passion fruit,3
+628,Passion fruit pie,Wheat,2
+629,Passion fruit pie,Egg,1
+630,Soft bouquet,Peony,4
+631,Soft bouquet,Cotton,1
+632,Soft bouquet,Cotton fabric,1
+633,Black sesame smoothie,Sesame,3
+634,Black sesame smoothie,Banana,1
+635,Black sesame smoothie,Goat milk,2
+636,Exfoliating soap,Cacao,2
+637,Exfoliating soap,Coffee bean,2
+638,Exfoliating soap,Raspberry,1
+639,Filled Donut,Plain Donut,1
+640,Filled Donut,Raspberry jam,1
+641,Banana pancakes,Banana,1
+642,Banana pancakes,Blackberry,2
+643,Banana pancakes,Wheat,3
+644,Banana pancakes,Cream,1
+645,Plum jam,Plum,3
+646,Tea pot,Clay,3
+647,Tea pot,Coffee bean,1
+648,Tea pot,Gold ore,1
+649,Floral candle,Beeswax,1
+650,Floral candle,Peony,2
+651,Floral candle,Sunflower,2
+652,Floral candle,Indigo,2
+653,Chocolate roll,Cacao,5
+654,Chocolate roll,Cream,1
+655,Chocolate roll,Wheat,3
+656,Chocolate roll,Mint,3
+657,Canned fish,Fish fillet,2
+658,Canned fish,Chili Pepper,1
+659,Canned fish,Olive oil,1
+660,Hummus,Chickpea,3
+661,Hummus,Lemon,2
+662,Hummus,Garlic,1
+663,Banana split,Banana,1
+664,Banana split,Cream,1
+665,Banana split,Cherry,3
+666,Fish skewer,Fish fillet,1
+667,Fish skewer,Mushroom,3
+668,Fish skewer,Ginger,1
+669,Fish skewer,Sesame,2
+670,Passion fruit jam,Passion fruit,3
+671,Potted plant,Clay,3
+672,Potted plant,Sunflower,1
+673,Mint tea,Tea leaf,3
+674,Mint tea,Watermelon,1
+675,Mint tea,Mint,1
+676,Mushroom pot pie,Mushroom,3
+677,Mushroom pot pie,Cabbage,3
+678,Mushroom pot pie,Wheat,3
+679,Mushroom pot pie,Egg,2
+680,Mango juice,Mango,2
+681,Flower pendant,Peony,3
+682,Flower pendant,Platinum bar,1
+683,Flower pendant,Gold bar,2
+684,Chili poppers,Chili Pepper,3
+685,Chili poppers,Wheat,1
+686,Chili poppers,Bacon,3
+687,Chili poppers,Cheese,1
+688,Kimchi,Cabbage,5
+689,Kimchi,Ginger,1
+690,Kimchi,Chili Pepper,1
+691,Kimchi,Garlic,1
+692,Falafel,Chickpea,3
+693,Falafel,Onion,2
+694,Falafel,Garlic,2
+695,Falafel,Chili Pepper,1
+696,Eggplant parmesan,Eggplant,4
+697,Eggplant parmesan,Cheese,1
+698,Eggplant parmesan,Tomato sauce,1
+699,Honey face mask,Egg,2
+700,Honey face mask,Honey,1
+701,Honey face mask,Lemon,1
+702,Clay mug,Clay,3
+703,Clay mug,Indigo,2
+704,Clay mug,Peony,1
+705,Rich fudge,Butter,3
+706,Rich fudge,Cacao,3
+707,Rich fudge,White sugar,2
+708,Cocoa smoothie,Banana,2
+709,Cocoa smoothie,Cacao,3
+710,Cocoa smoothie,Milk,1
+711,Fried candy bar,Cacao,3
+712,Fried candy bar,Cookie,1
+713,Fried candy bar,Peanuts,1
+714,Tart dressing,Passion fruit,2
+715,Tart dressing,Chili Pepper,2
+716,Tart dressing,Honey,1
+717,Tropical fondue,White sugar,1
+718,Tropical fondue,Cream,2
+719,Tropical fondue,Pineapple,3
+720,Tropical fondue,Mango,2
+721,Mushroom pasta,Mushroom,5
+722,Mushroom pasta,Fresh pasta,3
+723,Mushroom pasta,Goat milk,1
+724,Macaroon,Cacao,1
+725,Macaroon,Coconut,2
+726,Macaroon,White sugar,2
+727,Plum smoothie,Plum,3
+728,Plum smoothie,Grapes,2
+729,Plum smoothie,Mint,1
+730,Plum smoothie,Honey,1
+731,Dried fruit,Grapes,1
+732,Dried fruit,Raspberry,1
+733,Dried fruit,Strawberry,1
+734,Dried fruit,Orange,1
+735,Mint fudge,Butter,2
+736,Mint fudge,Cacao,2
+737,Mint fudge,White sugar,1
+738,Mint fudge,Mint,3
+739,Coconut ice cream,Coconut,2
+740,Coconut ice cream,Syrup,1
+741,Samosa,Chickpea,2
+742,Samosa,Wheat,4
+743,Samosa,Potato,3
+744,Samosa,Chili Pepper,1
+745,Plain yogurt,Milk,2
+746,Plain yogurt,Cream,3
+747,Mushroom soup,Mushroom,3
+748,Mushroom soup,Milk,1
+749,Mushroom soup,Onion,2
+750,Chili fudge,Butter,2
+751,Chili fudge,Cacao,2
+752,Chili fudge,White sugar,1
+753,Chili fudge,Chili Pepper,3
+754,Tropical smoothie,Coconut,1
+755,Tropical smoothie,Banana,1
+756,Tropical smoothie,Passion fruit,2
+757,Tropical smoothie,Mango,2
+758,Guava juice,Guava,2
+759,Guava compote,Guava,2
+760,Guava compote,Lemon,1
+761,Guava compote,White sugar,1
+762,Strawberry yogurt,Plain yogurt,1
+763,Strawberry yogurt,Strawberry jam,1
+764,Veggie bouquet,Broccoli,3
+765,Veggie bouquet,Tomato,3
+766,Veggie bouquet,Mushroom,3
+767,Veggie bouquet,Cotton fabric,1
+768,Chickpea stew,Coconut,1
+769,Chickpea stew,Tomato,2
+770,Chickpea stew,Chickpea,3
+771,Fruit sorbet,Guava,1
+772,Fruit sorbet,Passion fruit,1
+773,Fruit sorbet,Mango,2
+774,Fruit sorbet,White sugar,3
+775,Lemon fudge,Butter,2
+776,Lemon fudge,White sugar,2
+777,Lemon fudge,Milk,3
+778,Lemon fudge,Lemon,2
+779,Hummus wrap,Hummus,1
+780,Hummus wrap,Bread,1
+781,Hummus wrap,Lettuce,1
+782,Tropical yogurt,Plain yogurt,1
+783,Tropical yogurt,Raspberry,4
+784,Tropical yogurt,Passion fruit,1
+785,Tropical yogurt,Mango,2
+786,Chili stew,Chili Pepper,3
+787,Chili stew,Bacon,2
+788,Chili stew,Onion,2
+789,Chili stew,Cream,1
+790,Plain cupcake,Milk,2
+791,Plain cupcake,White sugar,3
+792,Plain cupcake,Egg,1
+793,Plain cupcake,Wheat,5
+794,Guava cupcake,Plain cupcake,1
+795,Guava cupcake,Guava,2
+796,Guava cupcake,Cream,1
+797,Rice ball,Rice,20
+798,Rice ball,Sesame,1
+799,Rice ball,Plum,1
+800,Peanut fudge,Butter,2
+801,Peanut fudge,Cacao,2
+802,Peanut fudge,White sugar,1
+803,Peanut fudge,Peanuts,2
+804,Winter stew,Bacon,1
+805,Winter stew,Potato,3
+806,Winter stew,Onion,2
+807,Winter stew,Mushroom,2
+808,Tropical cupcake,Plain cupcake,1
+809,Tropical cupcake,Pineapple,3
+810,Tropical cupcake,Coconut,2
+811,Cookie cupcake,Plain cupcake,1
+812,Cookie cupcake,Cream,2
+813,Cookie cupcake,Cookie,2
+814,Cookie cupcake,Cacao,1
+815,Pomegranate tea,Tea leaf,4
+816,Pomegranate tea,Pomegranate,1
+817,Breakfast Bowl,Plain yogurt,1
+818,Breakfast Bowl,Oats,4
+819,Breakfast Bowl,Honey,1
+820,Breakfast Bowl,Blackberry,2
+821,Apple Porridge,Apple,1
+822,Apple Porridge,Apple jam,2
+823,Apple Porridge,Oats,4
+824,Pineapple Coconut Bars,Coconut,1
+825,Pineapple Coconut Bars,White sugar,2
+826,Pineapple Coconut Bars,Oats,3
+827,Pineapple Coconut Bars,Pineapple,2
+828,Sweet Porridge,Peach,1
+829,Sweet Porridge,Honey,2
+830,Sweet Porridge,Oats,3
+831,Rich Soap,Oats,2
+832,Rich Soap,Coconut,1
+833,Rich Soap,Pomegranate,1
+834,Fresh Porridge,Pomegranate,1
+835,Fresh Porridge,Mint,2
+836,Fresh Porridge,Coconut,2
+837,Fresh Porridge,Oats,3
+838,Plain waffles,White sugar,2
+839,Plain waffles,Egg,3
+840,Plain waffles,Wheat,5
+841,Berry waffles,Plain waffles,1
+842,Berry waffles,Syrup,1
+843,Berry waffles,Raspberry,3
+844,Berry waffles,Blackberry,2
+845,Chocolate waffles,Plain waffles,1
+846,Chocolate waffles,Cacao,2
+847,Chocolate waffles,Strawberry,3
+848,Chocolate waffles,Banana,1
+849,Breakfast waffles,Plain waffles,1
+850,Breakfast waffles,Bacon,2
+851,Breakfast waffles,Egg,1
+852,Breakfast waffles,Asparagus,2
+853,Orange salad,Cheese,1
+854,Orange salad,Lettuce,3
+855,Orange salad,Pomegranate,1
+856,Orange salad,Orange,2
+857,Soothing Pad,Cotton fabric,2
+858,Soothing Pad,Wheat,5
+859,Soothing Pad,Chamomile,5
+860,Chamomile Essential Oil,Chamomile,5
+861,Chamomile tea,Chamomile,5
+862,Chamomile tea,Honeycomb,1
+863,Lemon Essential Oil,Lemon,3
+864,Ginger Essential Oil,Ginger,5
+865,Mint Essential Oil,Mint,5
+866,Fresh Diffuser,Ginger Essential Oil,1
+867,Fresh Diffuser,Honey peanuts,1
+868,Zesty Perfume,Lemon Essential Oil,1
+869,Zesty Perfume,Ginger,3
+870,Calming Diffuser,Chamomile Essential Oil,1
+871,Calming Diffuser,Indigo,3
+872,Vanilla Milkshake,Vanilla ice cream,1
+873,Vanilla Milkshake,Cookie,2
+874,Vanilla Milkshake,Toffee,1
+875,Vanilla Milkshake,Syrup,1
+876,Mocha Milkshake,Chocolate ice cream,1
+877,Mocha Milkshake,Espresso,2
+878,Fruity Milkshake,Peach ice cream,1
+879,Fruity Milkshake,Orange,2
+880,Fruity Milkshake,Lemon,1

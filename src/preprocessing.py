@@ -105,21 +105,21 @@ def calculate_production_cost(items_df, recipes_df):
 
     product_costs = {}
 
-    for product in recipes_df['product_item_id'].unique():
-        product_recipe = recipes_df[recipes_df['product_item_id'] == product]
+    for product in recipes_df['product'].unique():
+        product_recipe = recipes_df[recipes_df['product'] == product]
         total_cost = 0
 
         for _, row in product_recipe.iterrows():
 
-            if not any(items_df['item_id'] == row['ingredient_item_id']): 
-                raise ValueError(f"Ingredient '{row['ingredient_item_id']}' in recipes_df is missing from items_df")
+            if not any(items_df['name'] == row['ingredient']): 
+                raise ValueError(f"Ingredient '{row['ingredient']}' in recipes_df is missing from items_df")
 
-            ingredient_cost = items_df.loc[items_df['item_id'] == row['ingredient_item_id'], 'cost'].values[0]
+            ingredient_cost = items_df.loc[items_df['name'] == row['ingredient'], 'cost'].values[0]
             total_cost += ingredient_cost * row['quantity']
 
         product_costs[product] = total_cost
 
-    items_df['production_cost'] = items_df['item_id'].map(product_costs)
+    items_df['production_cost'] = items_df['name'].map(product_costs)
 
     return items_df
 

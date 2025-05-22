@@ -3,19 +3,25 @@ import pandas as pd
 
 from preprocessing import run_preprocessing
 
-def get_unique_sorted_ingredients(recipes_df, items_df):
-    ingredient_map = {row['item_id']: row['name'] for _, row in items_df.iterrows()}
+def get_unique_sorted_ingredients(recipes_df: pd.DataFrame,
+                                   items_df: pd.DataFrame) -> list[str]:
+    """
+    Returns a sorted list of names from items_df that appear in the 'ingredient'
+    column of recipes_df.
 
-    unique_ingredient_ids = recipes_df['ingredient_item_id'].unique()
+    Args:
+        recipes_df (pd.DataFrame): DataFrame with an 'ingredient' column (by name).
+        items_df (pd.DataFrame): DataFrame with a 'name' column.
 
-    unique_ingredient_names = [
-        ingredient_map[ingredient_id]
-        for ingredient_id in unique_ingredient_ids
-        if ingredient_id in ingredient_map
-    ]
+    Returns:
+        list[str]: Alphabetically sorted unique ingredient names.
+    """
+    ingredient_names = set(recipes_df['ingredient'].unique())
+    item_names = set(items_df['name'].dropna())
 
-    return sorted(unique_ingredient_names)
+    matching_names = ingredient_names.intersection(item_names)
 
+    return sorted(matching_names)
 
 def get_ingredient_choice(ingredients, num_columns=5):
     """
@@ -101,40 +107,37 @@ def get_sort():
     return sort_mapping[sort_choice]
 
 
-def append_rare_ingredients(sorted_machine_data: pd.DataFrame, 
-                            items_df: pd.DataFrame, 
-                            recipes_df: pd.DataFrame, 
+def append_rare_ingredients(sorted_machine_data: pd.DataFrame,
+                            items_df: pd.DataFrame,
+                            recipes_df: pd.DataFrame,
                             rare_ingredients: list[str]) -> pd.DataFrame:
     """
     Appends a column `rare_ingredients` to `sorted_machine_data`, showing rare ingredients used.
 
-    This function maps rare ingredient names to their IDs, filters the `recipes_df`, and aggregates 
-    the rare ingredients used per product.
+    This version does not use item_id. It matches product names and rare ingredient names directly.
 
     Args:
         sorted_machine_data (pd.DataFrame): DataFrame containing product data.
-        items_df (pd.DataFrame): DataFrame mapping ingredient IDs to names.
+        items_df (pd.DataFrame): DataFrame listing all items with their names.
         recipes_df (pd.DataFrame): DataFrame listing product recipes (product, ingredient, quantity).
-        rare_ingredients (List[str]): List of rare ingredient names.
+        rare_ingredients (list[str]): List of rare ingredient names.
 
     Returns:
         pd.DataFrame: Updated `sorted_machine_data` with a `rare_ingredients` column.
     """
-    
-    # Get the IDs of rare ingredients
-    rare_ingredient_ids = items_df[items_df['name'].isin(rare_ingredients)]['item_id'].tolist()
 
-    # Filter recipes that belong to the sorted machine data
-    filtered_recipes = recipes_df[recipes_df['product_item_id'].isin(sorted_machine_data['item_id'])]
+    # Filter recipes for the products in sorted_machine_data
+    filtered_recipes = recipes_df[recipes_df['product'].isin(sorted_machine_data['name'])]
 
+    # Further filter only rare ingredients
+    rare_recipes = filtered_recipes[filtered_recipes['ingredient'].isin(rare_ingredients)]
+
+    # Aggregate rare ingredients by product name
     rare_recipe_agg = (
-        filtered_recipes[filtered_recipes['ingredient_item_id'].isin(rare_ingredient_ids)]
-        .merge(items_df[['item_id', 'name']], left_on='ingredient_item_id', right_on='item_id', how='left')
-        .groupby('product_item_id')
+        rare_recipes.groupby('product')
         .apply(
             lambda x: ', '.join(
-                f"{q} {ingredient_name}" 
-                for q, ingredient_name in zip(x['quantity'], x['name'])
+                f"{q} {ingredient}" for q, ingredient in zip(x['quantity'], x['ingredient'])
             ),
             include_groups=False
         )
@@ -144,19 +147,65 @@ def append_rare_ingredients(sorted_machine_data: pd.DataFrame,
     if not rare_recipe_agg.empty:
         rare_recipe_agg.rename(columns={0: 'rare_ingredients'}, inplace=True)
         sorted_machine_data = sorted_machine_data.merge(
-            rare_recipe_agg, left_on='item_id', right_on='product_item_id', how='left'
+            rare_recipe_agg, left_on='name', right_on='product', how='left'
         )
-        sorted_machine_data.drop(columns=['product_item_id'], inplace=True)
+        sorted_machine_data.drop(columns=['product'], inplace=True)
     else:
         sorted_machine_data['rare_ingredients'] = ''
 
     sorted_machine_data['rare_ingredients'] = (
         sorted_machine_data['rare_ingredients'].fillna('')
-    )    
-    
+    )
+
     return sorted_machine_data
 
-def display_products(items_df, recipes_df, rare_ingredients) -> None:
+
+def display_products(items_df: pd.DataFrame,
+                     recipes_df: pd.DataFrame,
+                     rare_ingredients: list[str]) -> None:
+    """
+    Displays products that use a selected ingredient, sorted by a user-defined criterion,
+    and appends rare ingredients used in each product.
+
+    The function filters products that use the chosen ingredient, sorts them based on
+    a user-defined sorting option, and appends a column showing rare ingredients used.
+
+    Args:
+        items_df (pd.DataFrame): DataFrame containing information about available items.
+        recipes_df (pd.DataFrame): DataFrame containing product recipes and their ingredients.
+        rare_ingredients (list[str]): List of rare ingredient names.
+
+    Returns:
+        None: This function does not return any values but directly prints the sorted product data.
+    """
+    unique_ingredients = get_unique_sorted_ingredients(recipes_df, items_df)
+    ingredient_choice = get_ingredient_choice(unique_ingredients)
+
+    # Get all products that use the selected ingredient by name
+    products_using_ingredient = recipes_df[
+        recipes_df['ingredient'] == ingredient_choice
+    ]['product'].unique()
+
+    # Filter items_df for those product names
+    filtered_items = items_df[items_df['name'].isin(products_using_ingredient)]
+
+    sort_criterion = get_sort()
+
+    sorted_filtered_items = filtered_items.sort_values(by=sort_criterion,
+                                                       ascending=False)
+
+    sorted_filtered_items = append_rare_ingredients(sorted_filtered_items,
+                                                    items_df,
+                                                    recipes_df,
+                                                    rare_ingredients)
+
+    print(sorted_filtered_items[
+        ['name', 'machine', 'total_profit', 'profit_per_minute',
+         'experience_per_minute', 'experience', 'rare_ingredients']
+    ].to_string())
+
+
+'''def display_products(items_df, recipes_df, rare_ingredients) -> None:
     """
     Displays products that use a selected ingredient, sorted by a user-defined criterion,
     and appends rare ingredients used in each product.
@@ -177,7 +226,7 @@ def display_products(items_df, recipes_df, rare_ingredients) -> None:
     ingredient_choice = get_ingredient_choice(unique_ingredients)
 
     id_choice = items_df[items_df['name'] == ingredient_choice]['item_id'].iloc[0]
-    product_ids_using_ingredient = recipes_df[recipes_df['ingredient_item_id'] == id_choice]['product_item_id'].unique()
+    product_ids_using_ingredient = recipes_df[recipes_df['ingredient'] == id_choice]['product_item_id'].unique()
     filtered_items = items_df[items_df['item_id'].isin(product_ids_using_ingredient)]
 
     sort_criterion = get_sort()
@@ -187,7 +236,7 @@ def display_products(items_df, recipes_df, rare_ingredients) -> None:
     
     print(sorted_filtered_items[['name', 'machine', 'total_profit', 'profit_per_minute', 
                                  'experience_per_minute', 'experience', 'rare_ingredients']].to_string())
-
+'''
     
 
 def sortby_ingredient():
